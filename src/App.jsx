@@ -1,13 +1,15 @@
 import { useState } from "react";
 import Me from "./pages/Me";
 import Journey from "./pages/Journey";
+import Navbar from "./Navbar";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 
 function App() {
   return (
-    <div>
+    <div className="body">
+      <Navbar />
       <h1>Hello World</h1>
       <BrowserRouter>
         <Routes>
