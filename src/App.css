@@ -25,3 +25,6 @@ div.me {
   overflow: hidden;
   font-family: "Press Start 2P", cursive;
 }
+p.name {
+  font-size: 30px;
+}

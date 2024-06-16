@@ -1,10 +1,10 @@
 import { useState } from "react";
-import "./Me.css";
 
 function Me() {
   return (
     <div className="me">
-      <h1>Me</h1>
+      <p className="name">LYLE JOHN DUMAYAS</p>
+      <p>Ako si lyle and ito ang small description kung sino ako</p>
     </div>
   );
 }
