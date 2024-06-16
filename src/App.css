@@ -13,6 +13,22 @@ div.body {
   overflow: hidden;
 }
 
+div.buttons {
+  width: 100%; /* Adjust width as needed */
+  height: 100vh; /* Adjust height as needed */
+}
+
+p.button {
+  display: flex;
+  justify-content: flex-end; /* Align to the right */
+  align-items: flex-end; /* Align to the bottom */
+  margin: 0;
+  padding: 0;
+  color: #39ff14;
+  overflow: hidden;
+  font-family: "Press Start 2P", cursive;
+}
+
 /* Me.jsx */
 div.me {
   background-color: rgb(0, 0, 0);

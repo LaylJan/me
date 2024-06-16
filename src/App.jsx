@@ -16,6 +16,8 @@ function App() {
             <Route path="me" element={<Me />} />
           </Routes>
         </BrowserRouter>
+        <p className="button">Journey</p>
+        <p className="button">Achievements</p>
       </div>
     </div>
   );
