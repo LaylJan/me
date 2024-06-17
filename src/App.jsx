@@ -7,6 +7,16 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import "./App.css";
 
 function App() {
+  /* Set the width of the side navigation to 250px */
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    console.log("asddas");
+  }
+
+  /* Set the width of the side navigation to 0 */
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
   return (
     <div style={{ backgroundColor: "black" }}>
       <div className="body">
@@ -17,6 +27,18 @@ function App() {
             <Route path="me" element={<Me />} />
           </Routes>
         </BrowserRouter>
+        <button className="PS w-96 hover:text-white" onClick={openNav}>
+          For more information click me
+        </button>
+        <div id="mySidenav" className="sidenav">
+          <a href="javascript:void(0)" className="closebtn" onClick={closeNav}>
+            &times;
+          </a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+        </div>
       </div>
     </div>
   );
