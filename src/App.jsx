@@ -2,7 +2,7 @@ import { useState } from "react";
 import Me from "./pages/Me";
 import Journey from "./pages/Journey";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import "./App.css";
 
 function App() {
@@ -16,8 +16,12 @@ function App() {
             <Route path="me" element={<Me />} />
           </Routes>
         </BrowserRouter>
-        <p className="button">Journey</p>
-        <p className="button">Achievements</p>
+        <div className="buttons">
+          <p onClick={{}} className="button">
+            Journey
+          </p>
+          <p className="button">Achievements</p>
+        </div>
       </div>
     </div>
   );
