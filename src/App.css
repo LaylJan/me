@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
 /* App.jsx */
-div.body {
+.body {
   display: flex;
   flex-direction: column;
   align-content: flex-start;
@@ -11,20 +11,11 @@ div.body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
-  overflow: hidden;
-}
-
-/* Me.jsx */
-div.me {
-  background-color: rgb(0, 0, 0);
-  margin: 40px;
-  padding: 0;
-  box-sizing: border-box;
-  color: #39ff14;
   overflow: hidden;
   font-family: "Press Start 2P", cursive;
 }
-p.name {
-  font-size: 30px;
+
+.PS {
+  font-family: "Press Start 2P", cursive;
+  color: #39ff14;
 }
