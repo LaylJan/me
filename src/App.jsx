@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Home from "./pages/Home";
 import Me from "./pages/Me";
 import Journey from "./pages/Journey";
 import ReactDOM from "react-dom/client";
@@ -11,17 +12,11 @@ function App() {
       <div className="body">
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Me />} />
+            <Route path="/" element={<Home />} />
             <Route path="journey" element={<Journey />} />
             <Route path="me" element={<Me />} />
           </Routes>
         </BrowserRouter>
-        <div className="buttons">
-          <p onClick={{}} className="button">
-            Journey
-          </p>
-          <p className="button">Achievements</p>
-        </div>
       </div>
     </div>
   );
