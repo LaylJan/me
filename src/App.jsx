@@ -20,24 +20,8 @@ function App() {
   return (
     <div style={{ backgroundColor: "black" }}>
       <div className="body">
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="journey" element={<Journey />} />
-            <Route path="me" element={<Me />} />
-          </Routes>
-        </BrowserRouter>
-        <button className="PS w-96 hover:text-white" onClick={openNav}>
-          For more information click me
-        </button>
-        <div id="mySidenav" className="sidenav">
-          <a href="javascript:void(0)" className="closebtn" onClick={closeNav}>
-            &times;
-          </a>
-          <a href="#">About</a>
-          <a href="#">Services</a>
-          <a href="#">Clients</a>
-          <a href="#">Contact</a>
+        <div className="w-1/2">
+          <Home />
         </div>
       </div>
     </div>
