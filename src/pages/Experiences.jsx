@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function Journey() {
+function Experiences() {
   return (
     <div>
       <h1>Journey</h1>
@@ -8,4 +8,4 @@ function Journey() {
   );
 }
 
-export default Journey;
+export default Experiences;
