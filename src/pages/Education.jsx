@@ -1,14 +1,12 @@
 import { useState } from "react";
+import Tagumpay from "../assets/Tagumpay.png";
 
 const Education = ({ setPage }) => {
   return (
     <div className="PS text-justify">
       <p className=""></p>
       <p>Educational Background:</p>
-      <p>
-        Graduated from Senior High School with a specialization in Information
-        and Communications Technology (ICT) at New Era University.
-      </p>
+      <img src={Tagumpay} alt="Tagumpay" className="w-20" />
     </div>
   );
 };

@@ -15,13 +15,14 @@ function App() {
     <div className="bg-black w-full  min-h-screen">
       <div className="flex">
         <div className="w-2/5">
-          <Home setPage={setPage} />
+          <div className="">
+            <Home setPage={setPage} />
+          </div>
         </div>
         <div className="w-3/5 m-10">
           <Experiences />
           <Education />
           <Skills />
-          <Projects />
         </div>
       </div>
     </div>
