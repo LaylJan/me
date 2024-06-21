@@ -1,7 +1,9 @@
 import { useState } from "react";
 import Home from "./pages/Home";
-import Me from "./pages/Me";
 import Experiences from "./pages/Experiences";
+import Education from "./pages/Education";
+import Projects from "./pages/Projects";
+import Skills from "./pages/Skills";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import "./App.css";
@@ -16,11 +18,10 @@ function App() {
           <Home setPage={setPage} />
         </div>
         <div className="w-3/5 m-10">
-          {page === "ME" ? (
-            <Me />
-          ) : page === "EXPERIENCE" ? (
-            <Experiences />
-          ) : null}
+          <Experiences />
+          <Education />
+          <Skills />
+          <Projects />
         </div>
       </div>
     </div>

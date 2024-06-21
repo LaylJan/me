@@ -1,7 +1,6 @@
 import { useState } from "react";
 
-function Me() {
-  console.log("ME");
+const Education = ({ setPage }) => {
   return (
     <div className="PS text-justify">
       <p className=""></p>
@@ -12,6 +11,6 @@ function Me() {
       </p>
     </div>
   );
-}
+};
 
-export default Me;
+export default Education;
