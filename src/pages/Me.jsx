@@ -1,10 +1,15 @@
 import { useState } from "react";
 
 function Me() {
+  console.log("ME");
   return (
-    <div className="me">
-      <p className="name">LYLE JOHN DUMAYAS</p>
-      <p>Ako si lyle and ito ang small description kung sino ako</p>
+    <div className="PS">
+      <p className=""></p>
+      <p>Educational Background:</p>
+      <p>
+        Graduated from Senior High School with a specialization in Information
+        and Communications Technology (ICT) at New Era University.
+      </p>
     </div>
   );
 }

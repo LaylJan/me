@@ -15,6 +15,7 @@ function App() {
         <div className="w-2/5">
           <Home />
         </div>
+        <Me />
       </div>
     </div>
   );
