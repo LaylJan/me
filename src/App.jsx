@@ -10,12 +10,14 @@ function App() {
   /* Set the width of the side navigation to 250px */
 
   return (
-    <div style={{ backgroundColor: "black" }}>
-      <div className="body">
+    <div className="bg-black w-full  min-h-screen">
+      <div className="flex">
         <div className="w-2/5">
           <Home />
         </div>
-        <Me />
+        <div className="w-3/5">
+          <Me />
+        </div>
       </div>
     </div>
   );

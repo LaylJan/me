@@ -17,6 +17,7 @@ function Home() {
         <br />
         <button className="hover:text-white">Contact me</button>
         <br />
+        <button className="hover:text-white">Education</button>
       </div>
     </div>
   );
