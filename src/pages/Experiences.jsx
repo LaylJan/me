@@ -3,7 +3,7 @@ import { useState } from "react";
 function Experiences() {
   return (
     <div>
-      <h1>Journey</h1>
+      <h1 className="PS">Experience</h1>
     </div>
   );
 }

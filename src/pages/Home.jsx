@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function Home() {
+const Home = ({ setPage }) => {
   return (
     <div className="PS m-5">
       <p className="text-2xl mb-5">LYLE JOHN DUMAYAS</p>
@@ -9,9 +9,16 @@ function Home() {
         and ready to bring your designs to reality.
       </p>
       <div className="m-8">
-        <button className="hover:text-white">About me</button>
+        <button onClick={() => setPage("ME")} className="hover:text-white">
+          About me
+        </button>
         <br />
-        <button className="hover:text-white">Experiences</button>
+        <button
+          onClick={() => setPage("EXPERIENCE")}
+          className="hover:text-white"
+        >
+          Experiences
+        </button>
         <br />
         <button className="hover:text-white">Projects</button>
         <br />
@@ -21,6 +28,6 @@ function Home() {
       </div>
     </div>
   );
-}
+};
 
 export default Home;

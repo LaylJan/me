@@ -7,16 +7,20 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import "./App.css";
 
 function App() {
-  /* Set the width of the side navigation to 250px */
+  const [page, setPage] = useState("");
 
   return (
     <div className="bg-black w-full  min-h-screen">
       <div className="flex">
         <div className="w-2/5">
-          <Home />
+          <Home setPage={setPage} />
         </div>
-        <div className="w-3/5">
-          <Me />
+        <div className="w-3/5 m-10">
+          {page === "ME" ? (
+            <Me />
+          ) : page === "EXPERIENCE" ? (
+            <Experiences />
+          ) : null}
         </div>
       </div>
     </div>

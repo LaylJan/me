@@ -3,7 +3,7 @@ import { useState } from "react";
 function Me() {
   console.log("ME");
   return (
-    <div className="PS m-10 text-justify">
+    <div className="PS text-justify">
       <p className=""></p>
       <p>Educational Background:</p>
       <p>
