@@ -2,8 +2,10 @@ import { useState } from "react";
 
 const Home = ({ setPage }) => {
   return (
-    <div className="PS m-5">
-      <p className="text-xl mb-5">LYLE JOHN DUMAYAS</p>
+    <div className="m-5 ">
+      <p className="text-white text-5xl mb-5 font-LS font-black">
+        I'M LYLE JOHN DUMAYAS
+      </p>
       <p className="text-justify text-base">
         Im a web developer with 1 year of experience worked on a few projects
         and ready to bring your designs to reality.

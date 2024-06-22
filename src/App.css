@@ -2,7 +2,19 @@
 
 /* App.jsx */
 
+.bg-bg {
+  background-image: url("./assets/BG.png");
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position: center; /* Centers the image */
+  background-attachment: fixed; /* Keeps the background fixed when scrolling */
+}
+
 .PS {
   font-family: "Press Start 2P", cursive;
   color: #39ff14;
+}
+
+.font-LS {
+  font-family: "League Spartan", sans-serif;
 }
