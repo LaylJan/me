@@ -20,9 +20,10 @@ function App() {
           </div>
         </div>
         <div className="w-3/5 m-10">
-          <Experiences />
           <Education />
+          <Experiences />
           <Skills />
+          <Projects />
         </div>
       </div>
     </div>
