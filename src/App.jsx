@@ -10,14 +10,15 @@ function App() {
   const [page, setPage] = useState("");
 
   return (
-    <div className="no-scrollbar bg-bg w-full min-h-screen">
+    <div className="bg-bg w-full min-h-screen">
       <div className="flex">
-        <div className="w-2/5 no-scrollbar">
+        <div className="w-2/5 overflow-y-auto fixed">
           <div>
             <Home setPage={setPage} />
           </div>
         </div>
-        <div className="w-3/5 m-10 no-scrollbar overflow-y-auto">
+
+        <div className="w-3/5 ml-40p">
           <Education />
           <Experiences />
           <Skills />

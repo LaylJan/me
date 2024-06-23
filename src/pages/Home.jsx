@@ -6,6 +6,11 @@ const Home = ({ setPage }) => {
       <p className="text-white text-5xl mb-5 font-black">
         I'M LYLE JOHN DUMAYAS
       </p>
+      <div className="m-1">
+        <p className="bg-light-blue inline-block text-white font-semibold pl-2 pr-2 rounded-3xl">
+          Web Developer
+        </p>
+      </div>
       <p className="text-white text-justify font-semibold text-lg">
         Im a web developer with 1 year of experience worked on a few projects
         and ready to bring your designs to reality.
