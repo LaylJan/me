@@ -3,7 +3,7 @@ import Webdev from "../assets/Webdev.svg";
 
 const Home = ({ setPage }) => {
   return (
-    <div className="m-5 font-ls ">
+    <div className="m-6 font-ls mt-20 ">
       <p className="text-white text-5xl mb-5 font-black">
         I'M LYLE JOHN DUMAYAS
       </p>
