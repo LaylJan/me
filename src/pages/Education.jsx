@@ -36,6 +36,7 @@ const Education = ({ setPage }) => {
           </div>
         </div>
       </div>
+      <p className="text-4xl font-black">TRAINING:</p>
     </div>
   );
 };
