@@ -1,12 +1,13 @@
 import { useState } from "react";
 import Java from "../assets/Java.png";
 import RJS from "../assets/Reactjs.png";
+import py from "../assets/python.png";
 
 const Skills = ({ setPage }) => {
   return (
     <div className="font-LS text-justify">
       <p className="text-3xl font-black">SKILLS:</p>
-      <div className="flex text-xl font-medium mt-2 mb-5 ml-5 items-center space-x-5 p-2 hover:bg-white hover:bg-opacity-10 transition duration-200">
+      <div className="flex text-xl font-medium mt-2 mb-5 ml-5 items-center space-x-5 p-2">
         <img src={RJS} alt="IntelliSeven" className="w-28" />
         <div className="flex flex-col -space-y-1">
           <p className="font-bold">React.js, Vite</p>
@@ -19,7 +20,7 @@ const Skills = ({ setPage }) => {
           </div>
         </div>
       </div>
-      <div className="flex text-xl font-medium mt-2 mb-5 ml-5 items-center space-x-5 p-2 hover:bg-white hover:bg-opacity-10 transition duration-200">
+      <div className="flex text-xl font-medium mt-2 mb-5 ml-5 items-center space-x-5 p-2">
         <img src={Java} alt="IntelliSeven" className="w-28" />
         <div className="flex flex-col -space-y-1">
           <p className="font-bold">Java</p>
@@ -28,6 +29,19 @@ const Skills = ({ setPage }) => {
               I picked up Java, a versatile, object-oriented programming
               language widely used for building cross-platform applications,
               during my early years at STI
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="flex text-xl font-medium mt-2 mb-5 ml-5 items-center space-x-5 p-2">
+        <img src={py} alt="python" className="w-28" />
+        <div className="flex flex-col -space-y-1">
+          <p className="font-bold">Python, Flask</p>
+          <div className="flex flex-col">
+            <p className="">
+              Python is a user-friendly language with extensive libraries. As I
+              embark on CS50, Python is used for most problem sets, including
+              the most challenging one, which is created with Python Flask.
             </p>
           </div>
         </div>
