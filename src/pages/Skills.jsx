@@ -6,10 +6,10 @@ const Skills = ({ setPage }) => {
   return (
     <div className="font-LS text-justify">
       <p className="text-3xl font-black">SKILLS:</p>
-      <div className="flex text-xl font-medium mt-2 mb-5 ml-5 items-center space-x-5">
-        <img src={RJS} alt="IntelliSeven" className="w-32" />
-        <div className="flex flex-col">
-          <p className="font-bold">React</p>
+      <div className="flex text-xl font-medium mt-2 mb-5 ml-5 items-center space-x-5 p-2 hover:bg-white hover:bg-opacity-10 transition duration-200">
+        <img src={RJS} alt="IntelliSeven" className="w-28" />
+        <div className="flex flex-col -space-y-1">
+          <p className="font-bold">React.js, Vite</p>
           <div className="flex flex-col">
             <p className="">
               Through my internship at IntelliSeven Inc., where we primarily
@@ -19,9 +19,9 @@ const Skills = ({ setPage }) => {
           </div>
         </div>
       </div>
-      <div className="flex text-xl font-medium mt-2 mb-5 ml-5 items-center space-x-5">
-        <img src={Java} alt="IntelliSeven" className="w-32" />
-        <div className="flex flex-col">
+      <div className="flex text-xl font-medium mt-2 mb-5 ml-5 items-center space-x-5 p-2 hover:bg-white hover:bg-opacity-10 transition duration-200">
+        <img src={Java} alt="IntelliSeven" className="w-28" />
+        <div className="flex flex-col -space-y-1">
           <p className="font-bold">Java</p>
           <div className="flex flex-col">
             <p className="">
