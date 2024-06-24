@@ -6,8 +6,8 @@ function Experiences() {
     <div className="font-LS text-justify">
       <p className="text-3xl font-black">EXPERIENCES:</p>
       <div className="flex text-xl font-medium mt-2 mb-5 ml-5 items-center space-x-5">
-        <img src={I7} alt="IntelliSeven" className="w-32" />
-        <div className="flex flex-col">
+        <img src={I7} alt="IntelliSeven" className="w-28" />
+        <div className="flex flex-col -space-y-1">
           <p className="font-bold">IntelliSeven Solutions Inc.</p>
           <div className="flex flex-col">
             <p className="">February 2024 - May 2024</p>
