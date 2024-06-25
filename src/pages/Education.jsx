@@ -6,8 +6,8 @@ import CS50 from "../assets/CS50.png";
 
 const Education = ({ setPage }) => {
   return (
-    <div className="font-LS text-justify">
-      <p className=" text-xl md:text-3xl font-black">EDUCATIONAL BACKROUND:</p>
+    <div className="font-LS md:text-justify">
+      <p className=" text-2xl md:text-3xl font-black">EDUCATIONAL BACKROUND:</p>
       <div>
         <div className="flex text-base md:text-xl font-medium mt-2 mb-5 md:ml-5 items-center space-x-5 p-2 hover:bg-white hover:bg-opacity-10 transition duration-200">
           <img src={TNHS} alt="Tagumpay" className="w-20 md:w-28" />
@@ -37,16 +37,12 @@ const Education = ({ setPage }) => {
           </div>
         </div>
       </div>
-      <p className="text-xl md:text-3xl font-black">TRAINING:</p>
+      <p className="text-2xl md:text-3xl font-black">TRAINING:</p>
       <div className="flex text-base md:text-xl font-medium mt-2 mb-5 md:ml-5 items-center md:space-x-5 p-2 hover:bg-white hover:bg-opacity-10 transition duration-200">
-        <img
-          src={CS50}
-          alt="Tagumpay"
-          className="w-20 md:w-28 hidden md:block"
-        />
+        <img src={CS50} alt="CS50" className="w-28 hidden md:block" />
         <div className="flex flex-col -space-y-1">
-          <p className="font-bold">CS50x</p>
-          <p className="">
+          <p className="font-bold text-2xl md:text-xl">CS50x</p>
+          <p className="text-justify">
             CS50x is an introductory computer science course that teaches
             fundamentals such as algorithms, data structures, software
             engineering, and web development through engaging and rigorous

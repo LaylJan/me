@@ -9,11 +9,14 @@ import tailwind from "../assets/Tailwind.png";
 const Skills = ({ setPage }) => {
   return (
     <div className="font-LS text-justify">
-      <p className="text-3xl font-black">SKILLS:</p>
-      <div className="flex text-xl font-medium mt-2 mb-5 ml-5 items-center space-x-5 p-2">
-        <img src={RJS} alt="IntelliSeven" className="w-28" />
+      <p className="text-2xl md:text-3xl font-black">SKILLS:</p>
+      <div className="flex text-base md:text-xl font-medium mt-2 mb-5 md:ml-5 items-center md:space-x-5 p-2">
+        <img src={RJS} alt="IntelliSeven" className="w-28 hidden md:block" />
         <div className="flex flex-col -space-y-1">
-          <p className="font-bold">React.js, Vite</p>
+          <div className="flex items-center">
+            <img src={RJS} alt="RJS" className="w-6 mr-1 -mt-1 md:hidden" />
+            <p className="font-bold text-2xl md:text-xl">React.js, Vite</p>
+          </div>
           <div className="flex flex-col">
             <p className="">
               Through my internship at IntelliSeven Inc., where we primarily
@@ -23,10 +26,17 @@ const Skills = ({ setPage }) => {
           </div>
         </div>
       </div>
-      <div className="flex text-xl font-medium mt-2 mb-5 ml-5 items-center space-x-5 p-2">
-        <img src={Java} alt="IntelliSeven" className="w-28" />
+      <div className="flex text-base md:text-xl font-medium mt-2 mb-5 md:ml-5 items-center md:space-x-5 p-2">
+        <img src={Java} alt="Java" className="w-28 hidden md:block" />
         <div className="flex flex-col -space-y-1">
-          <p className="font-bold">Java</p>
+          <div className="flex items-center">
+            <img
+              src={Java}
+              alt="Java"
+              className="w-6 mr-1 -mt-1 md:hidden bg-white rounded-full"
+            />
+            <p className="font-bold text-2xl md:text-xl">Java</p>
+          </div>
           <div className="flex flex-col">
             <p className="">
               I picked up Java, a versatile, object-oriented programming
@@ -36,10 +46,13 @@ const Skills = ({ setPage }) => {
           </div>
         </div>
       </div>
-      <div className="flex text-xl font-medium mt-2 mb-5 ml-5 items-center space-x-5 p-2">
-        <img src={py} alt="python" className="w-28" />
+      <div className="flex text-base md:text-xl font-medium mt-2 mb-5 md:ml-5 items-center md:space-x-5 p-2">
+        <img src={py} alt="python" className="w-28 hidden md:block" />
         <div className="flex flex-col -space-y-1">
-          <p className="font-bold">Python, Flask</p>
+          <div className="flex items-center">
+            <img src={py} alt="python" className="w-6 mr-1 -mt-1 md:hidden" />
+            <p className="font-bold text-2xl md:text-xl">Python, Flask</p>
+          </div>
           <div className="flex flex-col">
             <p className="">
               Python is a user-friendly language with extensive libraries. As I
@@ -49,10 +62,21 @@ const Skills = ({ setPage }) => {
           </div>
         </div>
       </div>
-      <div className="flex text-xl font-medium mt-2 mb-5 ml-5 items-center space-x-5 p-2">
-        <img src={resposive} alt="responsive" className="w-28" />
+      <div className="flex text-base md:text-xl font-medium mt-2 mb-5 md:ml-5 items-center md:space-x-5 p-2">
+        <img
+          src={resposive}
+          alt="responsive"
+          className="w-28 hidden md:block"
+        />
         <div className="flex flex-col -space-y-1">
-          <p className="font-bold">Resposive Design</p>
+          <div className="flex items-center">
+            <img
+              src={resposive}
+              alt="Responsive"
+              className="w-6 mr-1 -mt-1 md:hidden"
+            />
+            <p className="font-bold text-2xl md:text-xl">Responsive Design</p>
+          </div>
           <div className="flex flex-col">
             <p className="">
               At STI, I learned responsive design, a key web development concept
@@ -62,10 +86,21 @@ const Skills = ({ setPage }) => {
           </div>
         </div>
       </div>
-      <div className="flex text-xl font-medium mt-2 mb-5 ml-5 items-center space-x-5 p-2">
-        <img src={bootstrap} alt="IntelliSeven" className="w-28" />
+      <div className="flex text-base md:text-xl font-medium mt-2 mb-5 md:ml-5 items-center md:space-x-5 p-2">
+        <img
+          src={bootstrap}
+          alt="IntelliSeven"
+          className="w-28 hidden md:block"
+        />
         <div className="flex flex-col -space-y-1">
-          <p className="font-bold">BootStrap</p>
+          <div className="flex items-center">
+            <img
+              src={bootstrap}
+              alt="bootstrap"
+              className="w-6 mr-1 -mt-1 md:hidden"
+            />
+            <p className="font-bold text-2xl md:text-xl">Bootstrap</p>
+          </div>
           <div className="flex flex-col">
             <p className="">
               Bootstrap, a popular CSS framework for creating responsive and
@@ -75,10 +110,21 @@ const Skills = ({ setPage }) => {
           </div>
         </div>
       </div>
-      <div className="flex text-xl font-medium mt-2 mb-5 ml-5 items-center space-x-5 p-2">
-        <img src={tailwind} alt="IntelliSeven" className="w-28" />
+      <div className="flex text-base md:text-xl font-medium mt-2 mb-5 md:ml-5 items-center md:space-x-5 p-2">
+        <img
+          src={tailwind}
+          alt="IntelliSeven"
+          className="w-28 hidden md:block"
+        />
         <div className="flex flex-col -space-y-1">
-          <p className="font-bold">Tailwind CSS</p>
+          <div className="flex items-center">
+            <img
+              src={tailwind}
+              alt="tailwind"
+              className="w-6 mr-1 -mt-1 md:hidden"
+            />
+            <p className="font-bold text-2xl md:text-xl">Tailwind CSS</p>
+          </div>
           <div className="flex flex-col">
             <p className="">
               At IntelliSeven Inc., Tailwind CSS is widely used to design web
