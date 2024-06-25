@@ -11,14 +11,14 @@ function App() {
 
   return (
     <div className="bg-bg w-full min-h-screen">
-      <div className="flex">
-        <div className="w-2/5 overflow-y-auto fixed">
+      <div className="lg:flex">
+        <div className="w-full lg:w-2/5 overflow-y-auto lg:fixed">
           <div>
             <Home setPage={setPage} />
           </div>
         </div>
 
-        <div className="w-3/5 ml-40p">
+        <div className="w-full lg:w-3/5 ml-p">
           <Education />
           <Experiences />
           <Skills />
