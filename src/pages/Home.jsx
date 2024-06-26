@@ -1,5 +1,9 @@
 import { useEffect, useState } from "react";
 import Webdev from "../assets/Webdev.svg";
+import cap from "../assets/graduationcap.svg";
+import brain from "../assets/brain.svg";
+import proj from "../assets/project.svg";
+import skill from "../assets/skill.svg";
 
 const Home = ({ scrollToSection }) => {
   const [page, setPage] = useState("");
@@ -34,24 +38,39 @@ const Home = ({ scrollToSection }) => {
         <div className="flex flex-col items-start m-8 text-xl font-bold text-white">
           <button
             onClick={() => scroll("Education")}
-            className={"hover:underline"}
+            className="w-full hover:bg-white hover:bg-opacity-20 transition duration-200"
           >
-            Education
+            <div className="flex mb-1 p-1">
+              <img src={cap} alt="" className="mr-2" />
+              Education
+            </div>
           </button>
           <button
             onClick={() => scroll("Experiences")}
-            className="hover:underline"
+            className="w-full hover:bg-white hover:bg-opacity-20 transition duration-200"
           >
-            Experiences
+            <div className="flex mb-1 p-1">
+              <img src={brain} alt="" className="mr-2" />
+              Experiences
+            </div>
           </button>
-          <button onClick={() => scroll("Skills")} className="hover:underline">
-            Skills
+          <button
+            onClick={() => scroll("Skills")}
+            className="w-full hover:bg-white hover:bg-opacity-20 transition duration-200"
+          >
+            <div className="flex mb-1 p-1">
+              <img src={skill} alt="" className="mr-2" />
+              Skills
+            </div>
           </button>
           <button
             onClick={() => scroll("Projects")}
-            className="hover:underline"
+            className="w-full hover:bg-white hover:bg-opacity-20 transition duration-200"
           >
-            Projects
+            <div className="flex mb-1 p-1">
+              <img src={proj} alt="" className="mr-2" />
+              Projects
+            </div>
           </button>
         </div>
       </div>
