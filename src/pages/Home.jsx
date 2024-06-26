@@ -16,7 +16,7 @@ const Home = ({ scrollToSection }) => {
   };
 
   return (
-    <div className="m-6 md:mt-20 ">
+    <div className="m-6 md:mt-16 ">
       <p className="text-3xl text-white md:text-5xl mb-2 md:mb-5 font-black">
         I'M LYLE JOHN DUMAYAS
       </p>
