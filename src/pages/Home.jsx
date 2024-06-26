@@ -1,7 +1,20 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Webdev from "../assets/Webdev.svg";
 
-const Home = ({ setPage }) => {
+const Home = ({ scrollToSection }) => {
+  const [page, setPage] = useState("");
+
+  // useEffect(() => {
+  //   scrollToSection(page);
+  //   console.log(page);
+  // }, [page]);
+
+  const scroll = (page) => {
+    scrollToSection(page);
+    setPage(page);
+    console.log(page);
+  };
+
   return (
     <div className="m-6 md:mt-20 ">
       <p className="text-3xl text-white md:text-5xl mb-2 md:mb-5 font-black">
@@ -19,15 +32,27 @@ const Home = ({ setPage }) => {
       </p>
       <div className="hidden md:block">
         <div className="flex flex-col items-start m-8 text-xl font-bold text-white">
-          <button className="hover:underline">Education</button>
           <button
-            onClick={() => setPage("EXPERIENCE")}
+            onClick={() => scroll("Education")}
+            className={"hover:underline"}
+          >
+            Education
+          </button>
+          <button
+            onClick={() => scroll("Experiences")}
             className="hover:underline"
           >
             Experiences
           </button>
-          <button className="hover:underline">Skills</button>
-          <button className="hover:underline">Projects</button>
+          <button onClick={() => scroll("Skills")} className="hover:underline">
+            Skills
+          </button>
+          <button
+            onClick={() => scroll("Projects")}
+            className="hover:underline"
+          >
+            Projects
+          </button>
         </div>
       </div>
     </div>

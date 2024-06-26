@@ -6,7 +6,7 @@ import CS50 from "../assets/CS50.png";
 
 const Education = ({ setPage }) => {
   return (
-    <div className="font-LS md:text-justify">
+    <div className="font-LS md:text-justify mt-2">
       <p className=" text-2xl md:text-3xl font-black">EDUCATIONAL BACKROUND:</p>
       <div>
         <div className="flex text-base md:text-xl font-medium mt-2 mb-5 md:ml-5 items-center space-x-5 p-2 hover:bg-white hover:bg-opacity-10 transition duration-200">
