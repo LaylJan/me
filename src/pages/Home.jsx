@@ -8,11 +8,6 @@ import skill from "../assets/skill.svg";
 const Home = ({ scrollToSection }) => {
   const [page, setPage] = useState("");
 
-  // useEffect(() => {
-  //   scrollToSection(page);
-  //   console.log(page);
-  // }, [page]);
-
   const scroll = (page) => {
     scrollToSection(page);
     setPage(page);
@@ -20,7 +15,7 @@ const Home = ({ scrollToSection }) => {
   };
 
   return (
-    <div className="m-6 md:mt-16 ">
+    <div className="m-6 md:mt-4 ">
       <p className="text-3xl text-white md:text-5xl mb-2 md:mb-5 font-black">
         I'M LYLE JOHN DUMAYAS
       </p>

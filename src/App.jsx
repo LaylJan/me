@@ -12,6 +12,10 @@ function App() {
   const skillsRef = useRef(null);
   const projectsRef = useRef(null);
 
+  function goto(link) {
+    window.open(link, "_blank");
+  }
+
   const scrollToSection = (section) => {
     switch (section) {
       case "Education":
@@ -42,7 +46,7 @@ function App() {
 
         <div className="w-full md:w-3/5 ml-p">
           <div ref={educationRef}>
-            <Education />
+            <Education goto={goto} />
           </div>
           <div ref={experiencesRef}>
             <Experiences />
