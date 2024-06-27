@@ -49,7 +49,7 @@ function App() {
             <Education goto={goto} />
           </div>
           <div ref={experiencesRef}>
-            <Experiences />
+            <Experiences goto={goto} />
           </div>
           <div ref={skillsRef}>
             <Skills />
