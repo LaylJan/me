@@ -40,7 +40,7 @@ function App() {
       <div className="p-2 md:flex">
         <div className="w-full md:w-2/5 overflow-y-auto md:fixed">
           <div>
-            <Home scrollToSection={scrollToSection} />
+            <Home scrollToSection={scrollToSection} goto={goto} />
           </div>
         </div>
 
@@ -52,10 +52,10 @@ function App() {
             <Experiences goto={goto} />
           </div>
           <div ref={skillsRef}>
-            <Skills />
+            <Skills goto={goto} />
           </div>
           <div ref={projectsRef}>
-            <Projects />
+            <Projects goto={goto} />
           </div>
         </div>
       </div>

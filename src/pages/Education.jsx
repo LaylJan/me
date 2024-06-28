@@ -59,10 +59,9 @@ const Education = ({ goto }) => {
         <div className="flex flex-col -space-y-1">
           <p className="font-bold text-2xl md:text-xl">CS50x</p>
           <p className="text-justify">
-            CS50x is an introductory computer science course that teaches
-            fundamentals such as algorithms, data structures, software
-            engineering, and web development through engaging and rigorous
-            problem sets and projects.
+            Harvard's CS50, an introductory course in computer science covering
+            problem-solving, algorithms, data structures, and programming
+            languages.
           </p>
         </div>
       </div>
