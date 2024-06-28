@@ -2,7 +2,7 @@ import { useState } from "react";
 import Java from "../assets/Java.png";
 import RJS from "../assets/Reactjs.png";
 import py from "../assets/python.png";
-import resposive from "../assets/Responsive.png";
+import resposive from "../assets/Responsive.svg";
 import bootstrap from "../assets/bootstrap.png";
 import tailwind from "../assets/Tailwind.png";
 
@@ -64,30 +64,6 @@ const Skills = ({ setPage }) => {
       </div>
       <div className="flex text-base md:text-xl font-medium mt-2 mb-5 md:ml-5 items-center md:space-x-5 p-2">
         <img
-          src={resposive}
-          alt="responsive"
-          className="w-28 hidden md:block"
-        />
-        <div className="flex flex-col -space-y-1">
-          <div className="flex items-center">
-            <img
-              src={resposive}
-              alt="Responsive"
-              className="w-6 mr-1 -mt-1 md:hidden"
-            />
-            <p className="font-bold text-2xl md:text-xl">Responsive Design</p>
-          </div>
-          <div className="flex flex-col">
-            <p className="">
-              At STI, I learned responsive design, a key web development concept
-              that ensures websites work well on all devices, and further
-              enhanced this skill through problem sets in CS50.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div className="flex text-base md:text-xl font-medium mt-2 mb-5 md:ml-5 items-center md:space-x-5 p-2">
-        <img
           src={bootstrap}
           alt="IntelliSeven"
           className="w-28 hidden md:block"
@@ -130,6 +106,29 @@ const Skills = ({ setPage }) => {
               At IntelliSeven Inc., Tailwind CSS is widely used to design web
               pages. During my internship there, I became very comfortable using
               this framework.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="flex text-base md:text-xl font-medium mt-2 mb-5 md:ml-5 items-center md:space-x-5 p-2">
+        <img
+          src={resposive}
+          alt="responsive"
+          className="w-28 hidden md:block"
+        />
+        <div className="flex flex-col -space-y-1">
+          <div className="flex items-center">
+            <img
+              src={resposive}
+              alt="Responsive"
+              className="w-6 mr-1 -mt-1 md:hidden"
+            />
+            <p className="font-bold text-2xl md:text-xl">Responsive Design</p>
+          </div>
+          <div className="flex flex-col">
+            <p className="">
+              At STI, I learned responsive design, a key web development concept
+              that ensures websites work well on all devices.
             </p>
           </div>
         </div>
