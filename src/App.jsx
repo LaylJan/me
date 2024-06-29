@@ -4,6 +4,7 @@ import Experiences from "./pages/Experiences";
 import Education from "./pages/Education";
 import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
+import Contact from "./pages/Contact";
 import "./App.css";
 
 function App() {
@@ -45,6 +46,9 @@ function App() {
         </div>
 
         <div className="w-full md:w-3/5 ml-p">
+          <div ref={educationRef}>
+            <Contact goto={goto} />
+          </div>
           <div ref={educationRef}>
             <Education goto={goto} />
           </div>

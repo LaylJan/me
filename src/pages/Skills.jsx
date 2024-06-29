@@ -5,6 +5,7 @@ import py from "../assets/python.png";
 import resposive from "../assets/Responsive.svg";
 import bootstrap from "../assets/bootstrap.png";
 import tailwind from "../assets/Tailwind.png";
+import sqlite from "../assets/sqlite.png";
 
 const Skills = ({ setPage }) => {
   return (
@@ -106,6 +107,29 @@ const Skills = ({ setPage }) => {
               At IntelliSeven Inc., Tailwind CSS is widely used to design web
               pages. During my internship there, I became very comfortable using
               this framework.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="flex text-base md:text-xl font-medium mt-2 mb-5 md:ml-5 items-center md:space-x-5 p-2">
+        <img
+          src={sqlite}
+          alt="IntelliSeven"
+          className="w-28 hidden md:block bg-white p-1"
+        />
+        <div className="flex flex-col -space-y-1">
+          <div className="flex items-center">
+            <img
+              src={sqlite}
+              alt="tailwind"
+              className="w-6 mr-1 -mt-1 md:hidden bg-white p-1"
+            />
+            <p className="font-bold text-2xl md:text-xl">SQLite3</p>
+          </div>
+          <div className="flex flex-col">
+            <p className="">
+              CS50 teaches databases using SQLite3, providing an excellent
+              introduction to working with queries.
             </p>
           </div>
         </div>

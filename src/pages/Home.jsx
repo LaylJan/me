@@ -4,8 +4,6 @@ import cap from "../assets/graduationcap.svg";
 import brain from "../assets/brain.svg";
 import proj from "../assets/project.svg";
 import skill from "../assets/skill.svg";
-import git from "../assets/github.svg";
-import link from "../assets/linkedin.svg";
 
 const Home = ({ scrollToSection, goto }) => {
   const [page, setPage] = useState("");
@@ -70,22 +68,6 @@ const Home = ({ scrollToSection, goto }) => {
             </div>
           </button>
         </div>
-      </div>
-      <div className="flex mt-2 md:mt-0">
-        <button onClick={() => goto("https://github.com/LaylJan")}>
-          <img
-            src={git}
-            className="w-10 hover:bg-white hover:bg-opacity-20 transition duration-200"
-            alt=""
-          />
-        </button>
-        {/* <button>
-          <img
-            src={link}
-            className="w-10 hover:bg-white hover:bg-opacity-20 transition duration-200"
-            alt=""
-          />
-        </button> */}
       </div>
     </div>
   );
