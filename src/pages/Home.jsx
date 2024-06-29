@@ -4,6 +4,7 @@ import cap from "../assets/graduationcap.svg";
 import brain from "../assets/brain.svg";
 import proj from "../assets/project.svg";
 import skill from "../assets/skill.svg";
+import contact from "../assets/contact.svg";
 
 const Home = ({ scrollToSection, goto }) => {
   const [page, setPage] = useState("");
@@ -15,7 +16,7 @@ const Home = ({ scrollToSection, goto }) => {
   };
 
   return (
-    <div className="m-6 md:mt-4 ">
+    <div className="m-6 lg:mt-4 ">
       <p className="text-3xl text-white md:text-5xl mb-2 md:mb-5 font-black">
         I'M LYLE JOHN DUMAYAS
       </p>
@@ -29,8 +30,17 @@ const Home = ({ scrollToSection, goto }) => {
         Im a web developer with 1 year of experience worked on a few projects
         and ready to bring your designs to reality.
       </p>
-      <div className="hidden md:block">
+      <div className="hidden lg:block">
         <div className="flex flex-col items-start m-8 text-xl font-bold text-white">
+          <button
+            onClick={() => scroll("Contact")}
+            className="w-full hover:bg-white hover:bg-opacity-20 transition duration-200"
+          >
+            <div className="flex mb-1 p-1">
+              <img src={contact} alt="" className="mr-2" />
+              Contact
+            </div>
+          </button>
           <button
             onClick={() => scroll("Education")}
             className="w-full hover:bg-white hover:bg-opacity-20 transition duration-200"

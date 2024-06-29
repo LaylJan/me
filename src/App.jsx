@@ -12,6 +12,7 @@ function App() {
   const experiencesRef = useRef(null);
   const skillsRef = useRef(null);
   const projectsRef = useRef(null);
+  const contactRef = useRef(null);
 
   function goto(link) {
     window.open(link, "_blank");
@@ -19,6 +20,9 @@ function App() {
 
   const scrollToSection = (section) => {
     switch (section) {
+      case "Contact":
+        contactRef.current.scrollIntoView({ behavior: "smooth" });
+        break;
       case "Education":
         educationRef.current.scrollIntoView({ behavior: "smooth" });
         break;
@@ -38,15 +42,15 @@ function App() {
 
   return (
     <div className="bg-bg w-full min-h-screen">
-      <div className="p-2 md:flex">
-        <div className="w-full md:w-2/5 overflow-y-auto md:fixed">
+      <div className="p-2 lg:flex">
+        <div className="w-full lg:w-2/5 overflow-y-auto lg:fixed">
           <div>
             <Home scrollToSection={scrollToSection} goto={goto} />
           </div>
         </div>
 
-        <div className="w-full md:w-3/5 ml-p">
-          <div ref={educationRef}>
+        <div className="w-full lg:w-3/5 ml-p">
+          <div ref={contactRef}>
             <Contact goto={goto} />
           </div>
           <div ref={educationRef}>

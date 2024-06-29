@@ -128,8 +128,8 @@ const Skills = ({ setPage }) => {
           </div>
           <div className="flex flex-col">
             <p className="">
-              CS50 teaches databases using SQLite3, providing an excellent
-              introduction to working with queries.
+              CS50 teached me about databases using SQLite3, providing an
+              excellent introduction to working with queries.
             </p>
           </div>
         </div>
