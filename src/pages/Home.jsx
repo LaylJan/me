@@ -20,7 +20,7 @@ const Home = ({ scrollToSection, goto }) => {
       <p className="text-3xl text-white md:text-5xl mb-2 md:mb-5 font-black">
         I'M LYLE JOHN DUMAYAS
       </p>
-      <div className="m-1">
+      <div className="m-1 -mt-1">
         <p className="bg-light-blue inline-flex text-black text-sm md:text-base  font-semibold pl-2 pr-2 rounded-3xl items-center">
           <img src={Webdev} alt="Web Developer" className="mr-2" />
           Web Developer
@@ -31,16 +31,7 @@ const Home = ({ scrollToSection, goto }) => {
         and ready to bring your designs to reality.
       </p>
       <div className="hidden lg:block">
-        <div className="flex flex-col items-start m-8 text-xl font-bold text-white">
-          <button
-            onClick={() => scroll("Contact")}
-            className="w-full hover:bg-white hover:bg-opacity-20 transition duration-200"
-          >
-            <div className="flex mb-1 p-1">
-              <img src={contact} alt="" className="mr-2" />
-              Contact
-            </div>
-          </button>
+        <div className="flex flex-col items-start m-4 ml-8 text-xl font-bold text-white">
           <button
             onClick={() => scroll("Education")}
             className="w-full hover:bg-white hover:bg-opacity-20 transition duration-200"
@@ -75,6 +66,15 @@ const Home = ({ scrollToSection, goto }) => {
             <div className="flex p-1">
               <img src={proj} alt="" className="mr-2" />
               Projects
+            </div>
+          </button>
+          <button
+            onClick={() => scroll("Contact")}
+            className="w-full hover:bg-white hover:bg-opacity-20 transition duration-200"
+          >
+            <div className="flex mb-1 p-1">
+              <img src={contact} alt="" className="mr-2" />
+              Contact
             </div>
           </button>
         </div>

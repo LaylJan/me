@@ -50,9 +50,6 @@ function App() {
         </div>
 
         <div className="w-full lg:w-3/5 ml-p">
-          <div ref={contactRef}>
-            <Contact goto={goto} />
-          </div>
           <div ref={educationRef}>
             <Education goto={goto} />
           </div>
@@ -64,6 +61,9 @@ function App() {
           </div>
           <div ref={projectsRef}>
             <Projects goto={goto} />
+          </div>
+          <div ref={contactRef}>
+            <Contact goto={goto} />
           </div>
         </div>
       </div>

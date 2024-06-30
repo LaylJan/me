@@ -5,7 +5,7 @@ import cs50 from "../assets/CS50.png";
 const Projects = ({ goto }) => {
   return (
     <div className="font-LS text-justify">
-      <p className="text-2xl md:text-3xl font-black">PROJECTS:</p>
+      <p className="text-2xl md:text-3xl font-black">SELECTED PROJECTS:</p>
       <div
         onClick={() => goto("https://flip-game-alpha.vercel.app/")}
         className="flex text-base md:text-xl font-medium mt-2 mb-5 md:ml-5 items-center md:space-x-5 p-2 hover:bg-white hover:bg-opacity-10 transition duration-200"
@@ -15,7 +15,7 @@ const Projects = ({ goto }) => {
           <p className="font-bold text-2xl md:text-xl">Flip-Game</p>
           <div className="flex flex-col">
             <p className="">
-              A simple matching game with pokemon where I used this project to
+              A simple matching game with Pokémon where I used this project to
               try my first very own vercel server.
             </p>
           </div>

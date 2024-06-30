@@ -42,7 +42,7 @@ const Skills = ({ setPage }) => {
             <p className="">
               I picked up Java, a versatile, object-oriented programming
               language widely used for building cross-platform applications,
-              during my early years at STI
+              during my early years at STI.
             </p>
           </div>
         </div>
