@@ -53,7 +53,9 @@ const Contact = ({ goto }) => {
         </button>
         <button
           className="flex p-1 items-end hover:bg-white hover:bg-opacity-20 transition duration-200"
-          onClick={() => goto(resumeLink)}
+          onClick={() =>
+            goto("https://www.linkedin.com/in/lyle-john-dumayas-10528a317")
+          }
         >
           <img src={link} className="w-12" alt="" />
           <p className="font-bold text-2xl">Linkedin</p>
