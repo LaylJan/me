@@ -1,5 +1,6 @@
 import { useState } from "react";
 import flip from "../assets/flip-game.png";
+import calcu from "../assets/Calculator App.png";
 import cs50 from "../assets/CS50.png";
 
 const Projects = ({ goto }) => {
@@ -17,6 +18,20 @@ const Projects = ({ goto }) => {
             <p className="">
               A simple matching game with Pokémon where I used this project to
               try my first very own vercel server.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        onClick={() => goto("https://calculator-lemon-pi-85.vercel.app/")}
+        className="flex text-base md:text-xl font-medium mt-2 mb-5 md:ml-5 items-center md:space-x-5 p-2 hover:bg-white hover:bg-opacity-10 transition duration-200"
+      >
+        <img src={calcu} alt="IntelliSeven" className="w-28 hidden md:block" />
+        <div className="flex flex-col">
+          <p className="font-bold text-2xl md:text-xl">Calculator</p>
+          <div className="flex flex-col">
+            <p className="">
+              A calculator capable of doing simple calculation in PEMDAS order
             </p>
           </div>
         </div>
