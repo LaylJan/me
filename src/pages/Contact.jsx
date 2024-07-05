@@ -45,14 +45,14 @@ const Contact = ({ goto }) => {
       </div>
       <div className="flex mr-2 mb-2 justify-center md:justify-start">
         <button
-          className="flex p-1 items-end hover:bg-white hover:bg-opacity-20 transition duration-200"
+          className="flex p-1 md:items-end hover:bg-white hover:bg-opacity-20 transition duration-200"
           onClick={() => goto("https://github.com/LaylJan")}
         >
           <img src={git} className="w-12" alt="" />
           <p className="font-bold text-2xl">Github</p>
         </button>
         <button
-          className="flex p-1 items-end hover:bg-white hover:bg-opacity-20 transition duration-200"
+          className="flex p-1 md:items-end hover:bg-white hover:bg-opacity-20 transition duration-200"
           onClick={() =>
             goto("https://www.linkedin.com/in/lyle-john-dumayas-10528a317")
           }
@@ -61,7 +61,7 @@ const Contact = ({ goto }) => {
           <p className="font-bold text-2xl">Linkedin</p>
         </button>
         <button
-          className="flex p-1 items-end hover:bg-white hover:bg-opacity-20 transition duration-200"
+          className="flex p-1 md:items-end hover:bg-white hover:bg-opacity-20 transition duration-200"
           onClick={() => goto(resumeLink)}
         >
           <img src={resume} className="w-12" alt="" />

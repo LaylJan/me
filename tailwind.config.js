@@ -8,6 +8,9 @@ module.exports = {
       colors: {
         "light-blue": "#38B6FF",
       },
+      width: {
+        cw45: "45%",
+      },
     },
   },
   plugins: [],
