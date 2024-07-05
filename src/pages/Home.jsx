@@ -5,6 +5,7 @@ import brain from "../assets/brain.svg";
 import proj from "../assets/project.svg";
 import skill from "../assets/skill.svg";
 import contact from "../assets/contact.svg";
+import laptop from "../assets/laptop.svg";
 
 const Home = ({ scrollToSection, goto }) => {
   const [page, setPage] = useState("");
@@ -21,14 +22,17 @@ const Home = ({ scrollToSection, goto }) => {
         I'M LYLE JOHN DUMAYAS
       </p>
       <div className="m-1 -mt-1">
-        <p className="bg-light-blue inline-flex text-black text-sm md:text-base  font-semibold pl-2 pr-2 rounded-3xl items-center">
+        <p className="m-1 bg-light-blue inline-flex text-black text-sm md:text-base  font-semibold pl-2 pr-2 rounded-3xl items-center">
+          <img src={laptop} alt="Web Developer" className="mr-2" />
+          Programmer
+        </p>
+        <p className="m-1 bg-light-blue inline-flex text-black text-sm md:text-base  font-semibold pl-2 pr-2 rounded-3xl items-center">
           <img src={Webdev} alt="Web Developer" className="mr-2" />
           Web Developer
         </p>
       </div>
       <p className="text-white text-justify font-semibold text-base md:text-lg">
-        Im a web developer with 1 year of experience worked on a few projects
-        and ready to bring your designs to reality.
+        A programmer who seeks knowledge and experience.
       </p>
       <div className="hidden lg:block">
         <div className="flex flex-col items-start m-4 ml-8 text-xl font-bold text-white">
