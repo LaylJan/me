@@ -4,8 +4,10 @@ import NEU from "../assets/New Era.svg";
 import STI from "../assets/STI.png";
 import CS50 from "../assets/CS50.png";
 import certs from "../assets/certificates.svg";
+import { useNavigate } from "react-router-dom";
 
 const Education = ({ goto }) => {
+  const navigate = useNavigate();
   return (
     <div className="font-LS md:text-justify">
       <p className=" text-2xl md:text-3xl font-black">EDUCATIONAL BACKROUND:</p>
@@ -69,7 +71,7 @@ const Education = ({ goto }) => {
       <div className="flex w-full justify-end">
         <div
           onClick={() => {
-            goto("https://cs50.harvard.edu/x/2024/");
+            navigate("/certs");
           }}
           className="md:justify-end w-full md:w-2/5 flex font-medium mt-2 mb-5 md:ml-0 items-center md:space-x-5 p-2 hover:bg-white hover:bg-opacity-10 transition duration-200"
         >
