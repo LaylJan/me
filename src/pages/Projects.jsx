@@ -31,7 +31,8 @@ const Projects = ({ goto }) => {
           <p className="font-bold text-2xl md:text-xl">Calculator</p>
           <div className="flex flex-col">
             <p className="">
-              A calculator capable of doing simple calculation in PEMDAS order
+              A simple calculator capable of doing simple calculation in PEMDAS
+              order.
             </p>
           </div>
         </div>

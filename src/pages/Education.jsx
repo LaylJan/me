@@ -3,6 +3,7 @@ import TNHS from "../assets/Tagumpay.png";
 import NEU from "../assets/New Era.svg";
 import STI from "../assets/STI.png";
 import CS50 from "../assets/CS50.png";
+import certs from "../assets/certificates.svg";
 
 const Education = ({ goto }) => {
   return (
@@ -63,6 +64,17 @@ const Education = ({ goto }) => {
             problem-solving, algorithms, data structures, and programming
             languages.
           </p>
+        </div>
+      </div>
+      <div className="flex w-full justify-end">
+        <div
+          onClick={() => {
+            goto("https://cs50.harvard.edu/x/2024/");
+          }}
+          className="md:justify-end w-full md:w-2/5 flex font-medium mt-2 mb-5 md:ml-0 items-center md:space-x-5 p-2 hover:bg-white hover:bg-opacity-10 transition duration-200"
+        >
+          <img src={certs} className="md:-mr-1 mr-1" alt="CS50" />
+          <p className="font-bold text-lg md:text-xl">VIEW MY CERTIFICATES</p>
         </div>
       </div>
     </div>
