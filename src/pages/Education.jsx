@@ -63,8 +63,8 @@ const Education = ({ goto }) => {
           <p className="font-bold text-2xl md:text-xl">CS50x</p>
           <p className="text-justify">
             Harvard's CS50, an introductory course in computer science covering
-            problem-solving, algorithms, data structures, and programming
-            languages.
+            problem-solving, web development, and programming languages like
+            Python and JavaScript.
           </p>
         </div>
       </div>

@@ -23,7 +23,8 @@ const Experiences = ({ goto }) => {
         <div className="text-base md:text-xl font-medium mb-5 md:ml-5 items-center md:space-x-5 p-2">
           <p className="">
             Contributed to the development of a chat admin project, focusing on
-            both front-end and back-end tasks.
+            both front-end and back-end tasks mainly using React.js with
+            Graphql.
           </p>
         </div>
       </div>
