@@ -52,6 +52,21 @@ const Projects = ({ goto }) => {
           </div>
         </div>
       </div>
+      <div
+        onClick={() => goto("https://github.com/LaylJan/chat")}
+        className="flex text-base md:text-xl font-medium mt-2 mb-5 md:ml-5 items-center md:space-x-5 p-2 hover:bg-white hover:bg-opacity-10 transition duration-200"
+      >
+        <div className="flex flex-col">
+          <p className="font-bold text-2xl md:text-xl">Chat-app</p>
+          <div className="flex flex-col">
+            <p className="">
+              A simple local messaging app that can save messages. This is to
+              practice connecting databases with queries and get, post methods
+              to my front-end.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
