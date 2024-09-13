@@ -12,10 +12,10 @@ const Skills = ({ setPage }) => {
     <div className="font-LS text-justify">
       <p className="text-2xl md:text-3xl font-black">SKILLS:</p>
       <div className="flex text-base md:text-xl font-medium mt-2 mb-5 md:ml-5 items-center md:space-x-5 p-2">
-        <img src={RJS} alt="IntelliSeven" className="w-28 hidden md:block" />
+        <img src={RJS} alt="IntelliSeven" className="w-24 hidden md:block" />
         <div className="flex flex-col -space-y-1">
           <div className="flex items-center">
-            <img src={RJS} alt="RJS" className="w-6 mr-1 -mt-1 md:hidden" />
+            <img src={RJS} alt="RJS" className="w-4 mr-1 -mt-1 md:hidden" />
             <p className="font-bold text-2xl md:text-xl">React.js, Vite</p>
           </div>
           <div className="flex flex-col">
@@ -28,7 +28,7 @@ const Skills = ({ setPage }) => {
         </div>
       </div>
       <div className="flex text-base md:text-xl font-medium mt-2 mb-5 md:ml-5 items-center md:space-x-5 p-2">
-        <img src={Java} alt="Java" className="w-28 hidden md:block" />
+        <img src={Java} alt="Java" className="w-24 hidden md:block" />
         <div className="flex flex-col -space-y-1">
           <div className="flex items-center">
             <img
@@ -48,7 +48,7 @@ const Skills = ({ setPage }) => {
         </div>
       </div>
       <div className="flex text-base md:text-xl font-medium mt-2 mb-5 md:ml-5 items-center md:space-x-5 p-2">
-        <img src={py} alt="python" className="w-28 hidden md:block" />
+        <img src={py} alt="python" className="w-24 hidden md:block" />
         <div className="flex flex-col -space-y-1">
           <div className="flex items-center">
             <img src={py} alt="python" className="w-6 mr-1 -mt-1 md:hidden" />
@@ -64,11 +64,7 @@ const Skills = ({ setPage }) => {
         </div>
       </div>
       <div className="flex text-base md:text-xl font-medium mt-2 mb-5 md:ml-5 items-center md:space-x-5 p-2">
-        <img
-          src={bootstrap}
-          alt="IntelliSeven"
-          className="w-28 hidden md:block"
-        />
+        <img src={bootstrap} alt="Bootstrap" className="w-24 hidden md:block" />
         <div className="flex flex-col -space-y-1">
           <div className="flex items-center">
             <img
@@ -91,7 +87,7 @@ const Skills = ({ setPage }) => {
         <img
           src={tailwind}
           alt="IntelliSeven"
-          className="w-28 hidden md:block"
+          className="w-24 hidden md:block"
         />
         <div className="flex flex-col -space-y-1">
           <div className="flex items-center">
@@ -115,7 +111,7 @@ const Skills = ({ setPage }) => {
         <img
           src={sqlite}
           alt="IntelliSeven"
-          className="w-28 hidden md:block bg-white p-1"
+          className="w-24 hidden md:block bg-white p-1"
         />
         <div className="flex flex-col -space-y-1">
           <div className="flex items-center">
@@ -138,7 +134,7 @@ const Skills = ({ setPage }) => {
         <img
           src={resposive}
           alt="responsive"
-          className="w-28 hidden md:block"
+          className="w-24 hidden md:block"
         />
         <div className="flex flex-col -space-y-1">
           <div className="flex items-center">

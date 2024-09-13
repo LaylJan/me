@@ -10,13 +10,13 @@ const Experiences = ({ goto }) => {
         className="mt-2 md:ml-5 hover:bg-white hover:bg-opacity-10 transition duration-200"
       >
         <div className="flex text-base md:text-xl font-medium mt-2 md:ml-5 items-center space-x-5">
-          <img src={I7} alt="IntelliSeven" className="w-20 md:w-28" />
+          <img src={I7} alt="IntelliSeven" className="w-20 md:w-24" />
           <div className="flex flex-col -space-y-1">
             <p className="font-bold">IntelliSeven Solutions Inc.</p>
             <div className="flex flex-col">
               <p className="">February 2024 - May 2024</p>
               <p className="">Corporate office in Quezon City</p>
-              <p className="">Internship(OJT)</p>
+              <p className="">Internship</p>
             </div>
           </div>
         </div>
