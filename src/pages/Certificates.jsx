@@ -7,9 +7,21 @@ import back from "../assets/back.svg";
 
 const Certificates = ({}) => {
   const slides = [
-    { id: 1, image: cs50x, text: "CS50x Certificate" },
-    { id: 2, image: javaFun, text: "Java Fundamentals Certificate" },
-    { id: 3, image: i7, text: "I7 Certificate" },
+    {
+      id: 1,
+      image: cs50x,
+      text: "Obtained by completion of CS50x, including 10 problem sets and a final project",
+    },
+    {
+      id: 2,
+      image: javaFun,
+      text: "Awarded for satisfactory completion of all course work.",
+    },
+    {
+      id: 3,
+      image: i7,
+      text: "This Certificate is awarded as recognition for valuable contributions at Intelliseven Technology Solutions Inc. And successful complition of 320 hours of On-the-job Training. ",
+    },
   ];
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -22,9 +34,9 @@ const Certificates = ({}) => {
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
-    }, 10000); // Run nextSlide every 10 seconds
+    }, 10000);
 
-    return () => clearInterval(interval); // Cleanup on component unmount
+    return () => clearInterval(interval);
   }, [currentSlide]);
 
   const prevSlide = () => {
