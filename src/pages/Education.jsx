@@ -66,6 +66,7 @@ const Education = ({ goto }) => {
           </p>
         </div>
       </div>
+      <p className="text-2xl md:text-3xl font-black">CERTIFICATES:</p>
       <Certificates />
     </div>
   );

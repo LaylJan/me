@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import cs50x from "../assets/certs/CS50x.png";
 import i7 from "../assets/certs/I7.jpg";
 import javaFun from "../assets/certs/Java fundumentals.png";
@@ -18,6 +18,14 @@ const Certificates = ({}) => {
       prevSlide === slides.length - 1 ? 0 : prevSlide + 1
     );
   };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 10000); // Run nextSlide every 10 seconds
+
+    return () => clearInterval(interval); // Cleanup on component unmount
+  }, [currentSlide]);
 
   const prevSlide = () => {
     setCurrentSlide((prevSlide) =>
@@ -39,9 +47,9 @@ const Certificates = ({}) => {
               <img
                 src={slide.image}
                 alt={`Slide ${slide.id}`}
-                className="w-1/2"
+                className="w-full md:w-4/5"
               />
-              <p className="text-center mt-4 text-lg font-semibold">
+              <p className="text-center mt-2 text-lg font-semibold">
                 {slide.text}
               </p>
             </div>
@@ -52,11 +60,11 @@ const Certificates = ({}) => {
       {/* Previous Button */}
       <button
         onClick={prevSlide}
-        className="absolute top-1/2 left-0 transform -translate-y-1/2 p-4"
+        className="hidden md:block absolute top-1/2 left-0 transform -translate-y-1/2 p-4"
       >
         <img
           src={back}
-          alt="Next Slide"
+          alt="Previous Slide"
           className="w-12 h-12 hover:bg-white hover:bg-opacity-10 transition duration-200"
         />
       </button>
@@ -64,7 +72,7 @@ const Certificates = ({}) => {
       {/* Next Button */}
       <button
         onClick={nextSlide}
-        className="absolute top-1/2 right-0 transform -translate-y-1/2 p-4"
+        className="hidden md:block absolute top-1/2 right-0 transform -translate-y-1/2 p-4"
       >
         <img
           src={next}
@@ -72,15 +80,14 @@ const Certificates = ({}) => {
           className="w-12 h-12 hover:bg-white hover:bg-opacity-10 transition duration-200"
         />
       </button>
-
       {/* Dots Indicator */}
-      <div className="flex justify-center mt-4">
+      <div className="flex justify-center mt-2">
         {slides.map((_, idx) => (
           <div
             key={idx}
             onClick={() => setCurrentSlide(idx)}
             className={`h-3 w-3 rounded-full mx-2 cursor-pointer ${
-              currentSlide === idx ? "bg-gray-800" : "bg-gray-400"
+              currentSlide === idx ? "bg-white" : "bg-gray-400"
             }`}
           ></div>
         ))}
