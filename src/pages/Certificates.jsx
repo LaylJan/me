@@ -3,6 +3,7 @@ import cs50x from "../assets/certs/CS50x.png";
 import i7 from "../assets/certs/I7.jpg";
 import javaFun from "../assets/certs/Java fundumentals.png";
 import next from "../assets/next.svg";
+import back from "../assets/back.svg";
 
 const Certificates = ({}) => {
   const slides = [
@@ -51,9 +52,13 @@ const Certificates = ({}) => {
       {/* Previous Button */}
       <button
         onClick={prevSlide}
-        className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white px-3 py-2"
+        className="absolute top-1/2 left-0 transform -translate-y-1/2 p-4"
       >
-        Prev
+        <img
+          src={back}
+          alt="Next Slide"
+          className="w-12 h-12 hover:bg-white hover:bg-opacity-10 transition duration-200"
+        />
       </button>
 
       {/* Next Button */}
