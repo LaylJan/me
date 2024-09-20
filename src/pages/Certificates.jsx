@@ -3,6 +3,7 @@ import cs50x from "../assets/certs/CS50x.png";
 import i7 from "../assets/certs/I7.jpg";
 import javaFun from "../assets/certs/Java fundumentals.png";
 import next from "../assets/next.svg";
+import responsive from "../assets/certs/Responsive Web.png";
 import back from "../assets/back.svg";
 
 const Certificates = ({}) => {
@@ -10,7 +11,7 @@ const Certificates = ({}) => {
     {
       id: 1,
       image: cs50x,
-      text: "Obtained by completion of CS50x, including 10 problem sets and a final project",
+      text: "Obtained by completion of CS50x, including 10 problem sets and a final project.",
     },
     {
       id: 2,
@@ -21,6 +22,11 @@ const Certificates = ({}) => {
       id: 3,
       image: i7,
       text: "This Certificate is awarded as recognition for valuable contributions at Intelliseven Technology Solutions Inc. And successful complition of 320 hours of On-the-job Training. ",
+    },
+    {
+      id: 4,
+      image: responsive,
+      text: "For successfully completing the Resposive Web Design certification at FreeCodeCamp.",
     },
   ];
   const [currentSlide, setCurrentSlide] = useState(0);

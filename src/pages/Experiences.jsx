@@ -1,5 +1,6 @@
 import { useState } from "react";
 import I7 from "../assets/IntelliSeven.png";
+import Certificates from "./Certificates";
 
 const Experiences = ({ goto }) => {
   return (
@@ -28,6 +29,8 @@ const Experiences = ({ goto }) => {
           </p>
         </div>
       </div>
+      <p className="text-2xl md:text-3xl font-black">CERTIFICATES:</p>
+      <Certificates />
     </div>
   );
 };

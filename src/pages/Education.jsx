@@ -3,7 +3,7 @@ import TNHS from "../assets/Tagumpay.png";
 import NEU from "../assets/New Era.svg";
 import STI from "../assets/STI.png";
 import CS50 from "../assets/CS50.png";
-import Certificates from "./Certificates";
+import freeCodeCamp from "../assets/FreeCodeCamp.png";
 
 const Education = ({ goto }) => {
   return (
@@ -50,12 +50,7 @@ const Education = ({ goto }) => {
         </div>
       </div>
       <p className="text-2xl md:text-3xl font-black">TRAINING:</p>
-      <div
-        onClick={() => {
-          goto("https://cs50.harvard.edu/x/2024/");
-        }}
-        className="flex text-base md:text-xl font-medium mt-2 mb-5 md:ml-5 items-center md:space-x-5 p-2 hover:bg-white hover:bg-opacity-10 transition duration-200"
-      >
+      <div className="flex text-base md:text-xl font-medium mt-2 mb-5 md:ml-5 items-center md:space-x-5 p-2 ">
         <img src={CS50} alt="CS50" className="w-24 hidden md:block" />
         <div className="flex flex-col -space-y-1">
           <p className="font-bold text-2xl md:text-xl">CS50x</p>
@@ -66,8 +61,16 @@ const Education = ({ goto }) => {
           </p>
         </div>
       </div>
-      <p className="text-2xl md:text-3xl font-black">CERTIFICATES:</p>
-      <Certificates />
+      <div className="flex text-base md:text-xl font-medium mt-2 mb-5 md:ml-5 items-center md:space-x-5 p-2">
+        <img src={freeCodeCamp} alt="CS50" className="w-24 hidden md:block" />
+        <div className="flex flex-col -space-y-1">
+          <p className="font-bold text-2xl md:text-xl">Resposive Web Design</p>
+          <p className="text-justify">
+            Certified in Responsive Web Design from freeCodeCamp, with skills in
+            HTML, CSS, and responsive layouts."
+          </p>
+        </div>
+      </div>
     </div>
   );
 };
