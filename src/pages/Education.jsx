@@ -17,7 +17,6 @@ const Education = ({ goto }) => {
           <img src={TNHS} alt="Tagumpay" className="w-20 md:w-24" />
           <div className="flex flex-col -space-y-1">
             <p className="font-bold">Tagumpay National High School</p>
-            <p className="">2015 - 2019</p>
             <p className="">Rodriguez, Rizal</p>
             <p className="">Junior High School</p>
           </div>
@@ -29,7 +28,6 @@ const Education = ({ goto }) => {
           <img src={NEU} alt="New Era" className="w-20 md:w-24" />
           <div className="flex flex-col -space-y-1">
             <p className="font-bold">New Era University</p>
-            <p className="">2019 - 2021</p>
             <p className="">Quezon City</p>
             <p className="">TVL - Information and Communication Technology </p>
           </div>
@@ -43,7 +41,6 @@ const Education = ({ goto }) => {
           <img src={STI} alt="STI" className="w-20 md:w-24 rounded-full" />
           <div className="flex flex-col -space-y-1">
             <p className="font-bold">STI College Marikina</p>
-            <p className="">2022 - 2024</p>
             <p className="">Marikina City</p>
             <p className="">Associate in Computer Technology (ACT)</p>
           </div>
