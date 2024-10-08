@@ -26,7 +26,7 @@ const Certificates = ({}) => {
     {
       id: 4,
       image: responsive,
-      text: "For successfully completing the Resposive Web Design certification at FreeCodeCamp.",
+      text: "For successfully completing the Responsive Web Design certification at FreeCodeCamp.",
     },
   ];
   const [currentSlide, setCurrentSlide] = useState(0);

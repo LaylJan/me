@@ -61,7 +61,7 @@ const Education = ({ goto }) => {
       <div className="flex text-base md:text-xl font-medium mt-2 mb-5 md:ml-5 items-center md:space-x-5 p-2">
         <img src={freeCodeCamp} alt="CS50" className="w-24 hidden md:block" />
         <div className="flex flex-col -space-y-1">
-          <p className="font-bold text-2xl md:text-xl">Resposive Web Design</p>
+          <p className="font-bold text-2xl md:text-xl">Responsive Web Design</p>
           <p className="text-justify">
             Certified in Responsive Web Design from freeCodeCamp, with skills in
             HTML, CSS, and responsive layouts."
