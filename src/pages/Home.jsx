@@ -28,7 +28,7 @@ const Home = ({ scrollToSection, goto }) => {
         </p>
         <p className="m-1 bg-light-blue inline-flex text-black text-sm md:text-base  font-semibold pl-2 pr-2 rounded-3xl items-center">
           <img src={Webdev} alt="Web Developer" className="mr-2" />
-          Web Developer
+          Front-end Developer
         </p>
       </div>
       <p className="text-white text-justify font-semibold text-base md:text-lg">
