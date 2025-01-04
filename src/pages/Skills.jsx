@@ -2,7 +2,7 @@ import { useState } from "react";
 import Java from "../assets/Java.png";
 import RJS from "../assets/Reactjs.png";
 import py from "../assets/python.png";
-import responsive from "../assets/Responsive.svg";
+import responsive from "../assets/Webdev.svg";
 import bootstrap from "../assets/bootstrap.png";
 import tailwind from "../assets/Tailwind.png";
 import sqlite from "../assets/sqlite.png";
@@ -134,7 +134,7 @@ const Skills = ({ setPage }) => {
         <img
           src={responsive}
           alt="responsive"
-          className="w-24 hidden md:block"
+          className="w-36 hidden md:block"
         />
         <div className="flex flex-col -space-y-1">
           <div className="flex items-center">

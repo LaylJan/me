@@ -19,18 +19,9 @@ const Home = ({ scrollToSection, goto }) => {
   return (
     <div className="m-6 lg:mt-4 ">
       <p className="text-3xl text-white md:text-5xl mb-2 md:mb-5 font-black">
-        I'M LYLE JOHN DUMAYAS
+        I'M LYLE JOHN DUMAYAS W.I.P PO
       </p>
-      <div className="m-1 -mt-1">
-        <p className="m-1 bg-light-blue inline-flex text-black text-sm md:text-base  font-semibold pl-2 pr-2 rounded-3xl items-center">
-          <img src={laptop} alt="Web Developer" className="mr-2" />
-          Programmer
-        </p>
-        <p className="m-1 bg-light-blue inline-flex text-black text-sm md:text-base  font-semibold pl-2 pr-2 rounded-3xl items-center">
-          <img src={Webdev} alt="Web Developer" className="mr-2" />
-          Front-end Developer
-        </p>
-      </div>
+
       <p className="text-white text-justify font-semibold text-base md:text-lg">
         A programmer who seeks knowledge and experience.
       </p>
