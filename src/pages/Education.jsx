@@ -4,6 +4,7 @@ import NEU from "../assets/New Era.svg";
 import STI from "../assets/STI.png";
 import CS50 from "../assets/CS50.png";
 import freeCodeCamp from "../assets/FreeCodeCamp.png";
+import AASTA from "../assets/AASTA.png";
 
 const Education = ({ goto }) => {
   return (
@@ -52,9 +53,9 @@ const Education = ({ goto }) => {
         <div className="flex flex-col -space-y-1">
           <p className="font-bold text-2xl md:text-xl">CS50x</p>
           <p className="text-justify">
-            Harvard's CS50, an introductory course in computer science covering
-            problem-solving, web development, and programming languages like
-            Python and JavaScript.
+            <b>Harvard's CS50</b>, an introductory course in computer science
+            covering problem-solving, web development, and programming languages
+            like <b>Python</b> and <b>JavaScript</b>.
           </p>
         </div>
       </div>
@@ -63,8 +64,21 @@ const Education = ({ goto }) => {
         <div className="flex flex-col -space-y-1">
           <p className="font-bold text-2xl md:text-xl">Responsive Web Design</p>
           <p className="text-justify">
-            Certified in Responsive Web Design from freeCodeCamp, with skills in
-            HTML, CSS, and responsive layouts."
+            Certified in Responsive Web Design from freeCodeCamp, with skills in{" "}
+            <b>HTML</b>, <b>CSS</b>, and <b>Responsive layouts</b>.
+          </p>
+        </div>
+      </div>
+      <div className="flex text-base md:text-xl font-medium mt-2 mb-5 md:ml-5 items-center md:space-x-5 p-2">
+        <img src={AASTA} alt="CS50" className="w-24 hidden md:block" />
+        <div className="flex flex-col -space-y-1">
+          <p className="font-bold text-2xl md:text-xl">
+            NC-II Computer System Services
+          </p>
+          <p className="text-justify">
+            <b>Academy Asia School of Technology and Arts</b>, currently
+            pursuing National Certificate II, focusing on{" "}
+            <b>computer systems servicing</b> and technical skills.
           </p>
         </div>
       </div>
