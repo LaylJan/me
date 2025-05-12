@@ -66,9 +66,9 @@ function App() {
                   <div ref={skillsRef}>
                     <Skills goto={goto} />
                   </div>
-                  <div ref={projectsRef}>
+                  {/* <div ref={projectsRef}>
                     <Projects goto={goto} />
-                  </div>
+                  </div> */}
                   <div ref={contactRef}>
                     <Contact goto={goto} />
                   </div>

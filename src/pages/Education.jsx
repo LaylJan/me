@@ -5,10 +5,29 @@ import STI from "../assets/STI.png";
 import CS50 from "../assets/CS50.png";
 import freeCodeCamp from "../assets/FreeCodeCamp.png";
 import AASTA from "../assets/AASTA.png";
+import CSC from "../assets/CSC.png";
 
 const Education = ({ goto }) => {
   return (
     <div className="font-LS md:text-justify">
+      <p className="text-2xl md:text-3xl font-black">
+        PROFESSIONAL CERTIFICATION:
+      </p>
+      <div
+        onClick={() => goto("https://www.intelliseven.com.ph/")}
+        className="mt-2 md:ml-5 hover:bg-white hover:bg-opacity-10 transition duration-200"
+      >
+        <div className="flex text-base md:text-xl font-medium mt-2 md:ml-5 items-center space-x-5 mb-2">
+          <img src={CSC} alt="IntelliSeven" className="w-20 md:w-32" />
+          <div className="flex flex-col -space-y-1">
+            <p className="font-bold">Civil Service Professional Passer</p>
+            <div className="flex flex-col">
+              <p className="">March 2025</p>
+              <p className="">Civil Service Commissions</p>
+            </div>
+          </div>
+        </div>
+      </div>
       <p className=" text-2xl md:text-3xl font-black">EDUCATIONAL BACKROUND:</p>
       <div>
         <div

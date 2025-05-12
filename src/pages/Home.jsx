@@ -54,7 +54,7 @@ const Home = ({ scrollToSection, goto }) => {
               Skills
             </div>
           </button>
-          <button
+          {/* <button
             onClick={() => scroll("Projects")}
             className="w-full hover:bg-white hover:bg-opacity-20 transition duration-200"
           >
@@ -62,7 +62,7 @@ const Home = ({ scrollToSection, goto }) => {
               <img src={proj} alt="" className="mr-2" />
               Projects
             </div>
-          </button>
+          </button> */}
           <button
             onClick={() => scroll("Contact")}
             className="w-full hover:bg-white hover:bg-opacity-20 transition duration-200"
