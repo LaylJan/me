@@ -15,9 +15,9 @@ const Education = ({ goto }) => {
       </p>
       <div
         onClick={() => goto("https://www.intelliseven.com.ph/")}
-        className="mt-2 md:ml-5 hover:bg-white hover:bg-opacity-10 transition duration-200"
+        className="mt-2 md:ml-3 hover:bg-white hover:bg-opacity-10 transition duration-200"
       >
-        <div className="flex text-base md:text-xl font-medium mt-2 md:ml-5 items-center space-x-5 mb-2">
+        <div className="flex text-base md:text-xl font-medium mt-2 md:ml-0 items-center space-x-5 mb-2">
           <img src={CSC} alt="IntelliSeven" className="w-20 md:w-32" />
           <div className="flex flex-col -space-y-1">
             <p className="font-bold">Civil Service Professional Passer</p>
