@@ -23,7 +23,9 @@ const Home = ({ scrollToSection, goto }) => {
       </p>
 
       <p className="text-white text-justify font-semibold text-base md:text-lg">
-        A programmer who seeks knowledge and experience.
+        Passionate programmer with hands-on experience in Web Development, and full-stack
+        troubleshooting. Adept at rapidly mastering new tech stacks and solving complex challenges across
+        both software and hardware systems.
       </p>
       <div className="hidden lg:block">
         <div className="flex flex-col items-start m-4 ml-8 text-xl font-bold text-white">
