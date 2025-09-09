@@ -19,7 +19,9 @@ const Home = ({ scrollToSection, goto }) => {
   return (
     <div className="m-6 lg:mt-4 ">
       <p className="text-3xl text-white md:text-5xl mb-2 md:mb-5 font-black">
-        I'M LYLE JOHN DUMAYAS
+    I'M LYLE JOHN DUMAYAS
+        <br />
+        PS. W.I.P
       </p>
 
       <p className="text-white text-justify font-semibold text-base md:text-lg">
