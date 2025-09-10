@@ -15,6 +15,9 @@ function App() {
   const skillsRef = useRef(null);
   const projectsRef = useRef(null);
   const contactRef = useRef(null);
+  const [highlightSkills, setHighlightSkills] = useState(false);
+  const [highlightEducation, setHighlightEducation] = useState(false);
+  const [highlightExperiences, setHighlightExperiences] = useState(false);
 
   function goto(link) {
     window.open(link, "_blank");
@@ -52,18 +55,33 @@ function App() {
               <div className="p-2 lg:flex">
                 <div className="w-full lg:w-2/5 overflow-y-auto lg:fixed">
                   <div>
-                    <Home scrollToSection={scrollToSection} goto={goto} />
+                    <Home
+                      scrollToSection={scrollToSection}
+                      goto={goto}
+                      setHighlightSkills={setHighlightSkills}
+                      highlightSkills={highlightSkills}
+                      setHighlightEducation={setHighlightEducation}
+                      highlightEducation={highlightEducation}
+                      setHighlightExperiences={setHighlightExperiences}
+                      highlightExperiences={highlightExperiences}
+                    />
                   </div>
                 </div>
                 <div className="w-full lg:w-3/5 ml-p pr-10">
                   <div ref={educationRef}>
-                    <Education goto={goto} />
+                    <Education
+                      goto={goto}
+                      highlight={highlightEducation}
+                    />
                   </div>
                   <div ref={experiencesRef}>
-                    <Experiences goto={goto} />
+                    <Experiences
+                      goto={goto}
+                      highlight={highlightExperiences}
+                    />
                   </div>
                   <div ref={skillsRef}>
-                    <Skills goto={goto} />
+                    <Skills goto={goto} highlight={highlightSkills} />
                   </div>
                   {/* <div ref={projectsRef}>
                     <Projects goto={goto} />

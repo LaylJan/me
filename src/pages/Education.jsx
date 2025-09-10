@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useState } from "react";
 import TNHS from "../assets/Tagumpay.png";
 import NEU from "../assets/New Era.svg";
@@ -7,10 +8,18 @@ import freeCodeCamp from "../assets/FreeCodeCamp.png";
 import AASTA from "../assets/AASTA.png";
 import CSC from "../assets/CSC.png";
 
-const Education = ({ goto }) => {
+const Education = ({ goto, highlight }) => {
+  useEffect(() => {
+    console.log("Education highlight changed:", highlight);
+  }, [highlight]);
+
   return (
     <div className="font-LS md:text-justify">
-      <p className="text-2xl md:text-3xl font-black">
+      <p
+        className={`text-2xl md:text-3xl font-black transition duration-300 ${
+          highlight ? "text-blue-400 drop-shadow-lg" : ""
+        }`}
+      >
         PROFESSIONAL CERTIFICATION:
       </p>
       <div
@@ -28,7 +37,13 @@ const Education = ({ goto }) => {
           </div>
         </div>
       </div>
-      <p className=" text-2xl md:text-3xl font-black">EDUCATIONAL BACKROUND:</p>
+      <p
+        className={`text-2xl md:text-3xl font-black transition duration-300 ${
+          highlight ? "text-blue-400 drop-shadow-lg" : ""
+        }`}
+      >
+        EDUCATIONAL BACKROUND:
+      </p>
       <div>
         <div
           onClick={() => goto("https://www.facebook.com/TagumpayNHS03/")}
@@ -66,7 +81,11 @@ const Education = ({ goto }) => {
           </div>
         </div>
       </div>
-      <p className="text-2xl md:text-3xl font-black">TRAINING:</p>
+      <p
+        className={`text-2xl md:text-3xl font-black transition duration-300 ${
+          highlight ? "text-blue-400 drop-shadow-lg" : ""
+        }`}
+      >TRAINING:</p>
       <div className="flex text-base md:text-xl font-medium mt-2 mb-5 md:ml-5 items-center md:space-x-5 p-2 ">
         <img src={CS50} alt="CS50" className="w-24 hidden md:block" />
         <div className="flex flex-col -space-y-1">

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect } from "react";
 
 import RJS from "../assets/Reactjs.png";
 import WD from "../assets/WD.png";
@@ -6,10 +6,20 @@ import MS from "../assets/MS.png";
 import PR from "../assets/Programming.png";
 import CSS from "../assets/CSS.png";
 
-const Skills = ({ setPage }) => {
+const Skills = ({ goto, highlight }) => {
+  useEffect(() => {
+    console.log("highlight changed:", highlight);
+  }, [highlight]);
+
   return (
     <div className="font-LS text-justify">
-      <p className="text-2xl md:text-3xl font-black">SKILLS:</p>
+      <p
+        className={`text-2xl md:text-3xl font-black mb-4 transition duration-300 ${
+          highlight ? "text-green-400 drop-shadow-lg" : "text-white"
+        }`}
+      >
+        SKILLS:
+      </p>
       <div className="flex text-base md:text-xl font-medium mt-2 mb-5 md:ml-5 items-center md:space-x-5 p-2">
         <img src={WD} alt="Webdev" className="w-24 hidden md:block" />
         <div className="flex flex-col -space-y-1">

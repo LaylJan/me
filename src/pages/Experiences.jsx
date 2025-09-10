@@ -4,10 +4,16 @@ import BUGC from "../assets/BUGC.png";
 import SN from "../assets/SN.png";
 import Certificates from "./Certificates";
 
-const Experiences = ({ goto }) => {
+const Experiences = ({ goto, highlight }) => {
   return (
     <div className="font-LS text-justify">
-      <p className="text-2xl md:text-3xl font-black">EXPERIENCES:</p>
+      <p
+        className={`text-2xl md:text-3xl font-black transition duration-300 ${
+          highlight ? "text-purple-400 drop-shadow-lg" : ""
+        }`}
+      >
+        EXPERIENCES:
+      </p>
       <div
         onClick={() => goto("https://www.intelliseven.com.ph/")}
         className="mt-2 md:ml-5 hover:bg-white hover:bg-opacity-10 transition duration-200"
@@ -78,7 +84,13 @@ const Experiences = ({ goto }) => {
           </p>
         </div>
       </div>
-      <p className="text-2xl md:text-3xl font-black">CERTIFICATES:</p>
+      <p
+        className={`text-2xl md:text-3xl font-black transition duration-300 ${
+          highlight ? "text-purple-400 drop-shadow-lg" : ""
+        }`}
+      >
+        CERTIFICATES:
+      </p>
       <Certificates />
     </div>
   );
