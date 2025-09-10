@@ -51,3 +51,19 @@
   font-family: "League Spartan", sans-serif;
   color: white;
 }
+
+/* Allow scrolling but hide the scrollbar visually */
+body, html, #root, .bg-bg {
+  overflow: auto !important;
+}
+
+/* Hide scrollbar for Webkit browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+/* Hide scrollbar for Firefox */
+body {
+  scrollbar-width: none; /* Firefox */
+}

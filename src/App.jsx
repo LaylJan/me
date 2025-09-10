@@ -55,8 +55,7 @@ function App() {
                     <Home scrollToSection={scrollToSection} goto={goto} />
                   </div>
                 </div>
-
-                <div className="w-full lg:w-3/5 ml-p">
+                <div className="w-full lg:w-3/5 ml-p pr-10">
                   <div ref={educationRef}>
                     <Education goto={goto} />
                   </div>
