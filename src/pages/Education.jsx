@@ -9,9 +9,7 @@ import AASTA from "../assets/AASTA.png";
 import CSC from "../assets/CSC.png";
 
 const Education = ({ goto, highlight }) => {
-  useEffect(() => {
-    console.log("Education highlight changed:", highlight);
-  }, [highlight]);
+  useEffect(() => {}, [highlight]);
 
   return (
     <div className="font-LS md:text-justify">

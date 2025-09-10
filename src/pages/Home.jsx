@@ -15,7 +15,9 @@ const Home = ({
   setHighlightEducation,
   highlightEducation,
   setHighlightExperiences,
-  highlightExperiences
+  highlightExperiences,
+  setHighlightContact,
+  highlightContact
 }) => {
   const [page, setPage] = useState("");
 
@@ -89,6 +91,8 @@ const Home = ({
           </button> */}
           <button
             onClick={() => scroll("Contact")}
+            onMouseEnter={() => setHighlightContact(true)}
+            onMouseLeave={() => setHighlightContact(false)}
             className="w-full transition duration-300"
           >
             <div className="flex mb-1 p-1 text-2xl font-extrabold items-center gap-2 hover:scale-105 hover:text-red-400 transform-gpu transition-all duration-300">

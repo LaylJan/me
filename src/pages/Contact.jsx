@@ -5,7 +5,7 @@ import resume from "../assets/resume.svg";
 import copy from "../assets/copy.svg";
 import resumeLink from "../assets/resume.pdf";
 
-const Contact = ({ goto }) => {
+const Contact = ({ goto, highlight }) => {
   const [showMessage, setShowMessage] = useState(false);
 
   const copyText = async (text) => {
@@ -19,7 +19,13 @@ const Contact = ({ goto }) => {
   };
   return (
     <div className="font-LS text-justify mb-10">
-      <p className="text-2xl md:text-3xl font-black">CONTACT INFO:</p>
+      <p
+        className={`text-2xl md:text-3xl font-black transition duration-300 ${
+          highlight ? "text-red-400 drop-shadow-lg" : ""
+        }`}
+      >
+        CONTACT INFO:
+      </p>
       <div>
         <p className="flex font-bold text-base md:text-xl">
           layljandee@gmail.com

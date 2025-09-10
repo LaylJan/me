@@ -18,6 +18,8 @@ function App() {
   const [highlightSkills, setHighlightSkills] = useState(false);
   const [highlightEducation, setHighlightEducation] = useState(false);
   const [highlightExperiences, setHighlightExperiences] = useState(false);
+  const [highlightContact, setHighlightContact] = useState(false);
+
 
   function goto(link) {
     window.open(link, "_blank");
@@ -64,6 +66,8 @@ function App() {
                       highlightEducation={highlightEducation}
                       setHighlightExperiences={setHighlightExperiences}
                       highlightExperiences={highlightExperiences}
+                      setHighlightContact={setHighlightContact}
+                      highlightContact={highlightContact}
                     />
                   </div>
                 </div>
@@ -87,7 +91,7 @@ function App() {
                     <Projects goto={goto} />
                   </div> */}
                   <div ref={contactRef}>
-                    <Contact goto={goto} />
+                    <Contact goto={goto} highlight={highlightContact} />
                   </div>
                 </div>
               </div>

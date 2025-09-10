@@ -7,9 +7,7 @@ import PR from "../assets/Programming.png";
 import CSS from "../assets/CSS.png";
 
 const Skills = ({ goto, highlight }) => {
-  useEffect(() => {
-    console.log("highlight changed:", highlight);
-  }, [highlight]);
+  useEffect(() => { }, [highlight]);
 
   return (
     <div className="font-LS text-justify">
