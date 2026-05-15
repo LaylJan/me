@@ -14,10 +14,13 @@ function App() {
   const experiencesRef = useRef(null);
   const skillsRef = useRef(null);
   const projectsRef = useRef(null);
+  const certificatesRef = useRef(null);
   const contactRef = useRef(null);
   const [highlightSkills, setHighlightSkills] = useState(false);
   const [highlightEducation, setHighlightEducation] = useState(false);
   const [highlightExperiences, setHighlightExperiences] = useState(false);
+  const [highlightProjects, setHighlightProjects] = useState(false);
+  const [highlightCertificates, setHighlightCertificates] = useState(false);
   const [highlightContact, setHighlightContact] = useState(false);
 
 
@@ -41,6 +44,9 @@ function App() {
         break;
       case "Projects":
         projectsRef.current.scrollIntoView({ behavior: "smooth" });
+        break;
+      case "Certificates":
+        certificatesRef.current.scrollIntoView({ behavior: "smooth" });
         break;
       default:
         break;
@@ -66,17 +72,27 @@ function App() {
                       highlightEducation={highlightEducation}
                       setHighlightExperiences={setHighlightExperiences}
                       highlightExperiences={highlightExperiences}
+                      setHighlightProjects={setHighlightProjects}
+                      highlightProjects={highlightProjects}
+                      setHighlightCertificates={setHighlightCertificates}
+                      highlightCertificates={highlightCertificates}
                       setHighlightContact={setHighlightContact}
                       highlightContact={highlightContact}
                     />
                   </div>
                 </div>
                 <div className="w-full lg:w-3/5 ml-p pr-10">
-                  <div ref={educationRef}>
+                  {/* <div ref={educationRef}>
                     <Education
                       goto={goto}
                       highlight={highlightEducation}
                     />
+                  </div> */}
+                  <div ref={skillsRef}>
+                    <Skills goto={goto} highlight={highlightSkills} />
+                  </div>
+                  <div ref={projectsRef}>
+                    <Projects goto={goto} highlight={highlightProjects} />
                   </div>
                   <div ref={experiencesRef}>
                     <Experiences
@@ -84,12 +100,9 @@ function App() {
                       highlight={highlightExperiences}
                     />
                   </div>
-                  <div ref={skillsRef}>
-                    <Skills goto={goto} highlight={highlightSkills} />
+                  <div ref={certificatesRef}>
+                    <Certificates highlight={highlightCertificates} />
                   </div>
-                  {/* <div ref={projectsRef}>
-                    <Projects goto={goto} />
-                  </div> */}
                   <div ref={contactRef}>
                     <Contact goto={goto} highlight={highlightContact} />
                   </div>

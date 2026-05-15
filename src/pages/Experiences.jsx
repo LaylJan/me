@@ -84,14 +84,8 @@ const Experiences = ({ goto, highlight }) => {
           </p>
         </div>
       </div>
-      <p
-        className={`text-2xl md:text-3xl font-black transition duration-300 ${
-          highlight ? "text-purple-400 drop-shadow-lg" : ""
-        }`}
-      >
-        CERTIFICATES:
-      </p>
-      <Certificates />
+      
+      
     </div>
   );
 };

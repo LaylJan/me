@@ -5,7 +5,7 @@ import brain from "../assets/brain.svg";
 import proj from "../assets/project.svg";
 import skill from "../assets/skill.svg";
 import contact from "../assets/contact.svg";
-import laptop from "../assets/laptop.svg";
+import certificates from "../assets/certificates.svg";
 
 const Home = ({
   scrollToSection,
@@ -16,6 +16,10 @@ const Home = ({
   highlightEducation,
   setHighlightExperiences,
   highlightExperiences,
+  setHighlightProjects,
+  highlightProjects,
+  setHighlightCertificates,
+  highlightCertificates,
   setHighlightContact,
   highlightContact
 }) => {
@@ -33,13 +37,15 @@ const Home = ({
         I'M LYLE JOHN DUMAYAS
       </p>
       <p className="text-white text-justify font-semibold text-base md:text-lg">
-        Passionate programmer with hands-on experience in Web Development, and full-stack
-        troubleshooting. Adept at rapidly mastering new tech stacks and solving complex challenges across
-        both software and hardware systems.
+        Experienced in IT support, administrative assistance, remote troubleshooting, and digital task
+management. Skilled in handling email communication, scheduling, data organization, customer
+support, and productivity tools. Tech-savvy, adaptable, and able to manage tasks efficiently with
+minimal supervision.
+
       </p>
       <div className="hidden lg:block">
         <div className="flex flex-col items-start m-4 ml-16 text-2xl font-bold text-white">
-          <button
+          {/* <button
             onClick={() => scroll("Education")}
             onMouseEnter={() => setHighlightEducation(true)}
             onMouseLeave={() => setHighlightEducation(false)}
@@ -50,6 +56,32 @@ const Home = ({
                 <img src={cap} alt="" className="w-6 h-6 transition duration-300" />
               </span>
               <span className="tracking-wide">Education</span>
+            </div>
+          </button> */}
+          <button
+            onClick={() => scroll("Skills")}
+            onMouseEnter={() => setHighlightSkills(true)}
+            onMouseLeave={() => setHighlightSkills(false)}
+            className="w-full transition duration-300"
+          >
+            <div className="flex mb-1 p-1 text-2xl font-extrabold items-center gap-2 hover:scale-105 hover:text-green-400 transform-gpu transition-all duration-300">
+              <span className="mr-2 rounded-full bg-white bg-opacity-20 flex items-center justify-center w-10 h-10 transition duration-300">
+                <img src={skill} alt="" className="w-6 h-6 transition duration-300" />
+              </span>
+              <span className="tracking-wide">Skills</span>
+            </div>
+          </button>
+          <button
+            onClick={() => scroll("Projects")}
+            onMouseEnter={() => setHighlightProjects(true)}
+            onMouseLeave={() => setHighlightProjects(false)}
+            className="w-full transition duration-300"
+          >
+            <div className="flex mb-1 p-1 text-2xl font-extrabold items-center gap-2 hover:scale-105 hover:text-pink-400 transform-gpu transition-all duration-300">
+              <span className="mr-2 rounded-full bg-white bg-opacity-20 flex items-center justify-center w-10 h-10 transition duration-300">
+                <img src={proj} alt="" className="w-6 h-6 transition duration-300" />
+              </span>
+              <span className="tracking-wide">Projects</span>
             </div>
           </button>
           <button
@@ -66,29 +98,18 @@ const Home = ({
             </div>
           </button>
           <button
-            onClick={() => scroll("Skills")}
-            onMouseEnter={() => setHighlightSkills(true)}
-            onMouseLeave={() => setHighlightSkills(false)}
+            onClick={() => scroll("Certificates")}
+            onMouseEnter={() => setHighlightCertificates(true)}
+            onMouseLeave={() => setHighlightCertificates(false)}
             className="w-full transition duration-300"
           >
-            <div className="flex mb-1 p-1 text-2xl font-extrabold items-center gap-2 hover:scale-105 hover:text-green-400 transform-gpu transition-all duration-300">
+            <div className="flex mb-1 p-1 text-2xl font-extrabold items-center gap-2 hover:scale-105 hover:text-yellow-400 transform-gpu transition-all duration-300">
               <span className="mr-2 rounded-full bg-white bg-opacity-20 flex items-center justify-center w-10 h-10 transition duration-300">
-                <img src={skill} alt="" className="w-6 h-6 transition duration-300" />
+                <img src={certificates} alt="" className="w-6 h-6 transition duration-300" />
               </span>
-              <span className="tracking-wide">Skills</span>
+              <span className="tracking-wide">Certificates</span>
             </div>
           </button>
-          {/* <button
-            onClick={() => scroll("Projects")}
-            className="w-full transition duration-300"
-          >
-            <div className="flex p-1 text-2xl font-extrabold items-center gap-2 hover:scale-105 hover:text-pink-400 transform-gpu transition-all duration-300">
-              <span className="mr-2 rounded-full bg-white bg-opacity-20 flex items-center justify-center w-10 h-10 transition duration-300">
-                <img src={proj} alt="" className="w-6 h-6 transition duration-300" />
-              </span>
-              <span className="tracking-wide">Projects</span>
-            </div>
-          </button> */}
           <button
             onClick={() => scroll("Contact")}
             onMouseEnter={() => setHighlightContact(true)}

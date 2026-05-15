@@ -6,7 +6,7 @@ import next from "../assets/next.svg";
 import responsive from "../assets/certs/Responsive Web.png";
 import back from "../assets/back.svg";
 
-const Certificates = ({}) => {
+const Certificates = ({ highlight }) => {
   const slides = [
     {
       id: 1,
@@ -52,7 +52,14 @@ const Certificates = ({}) => {
   };
   return (
     <div className="relative w-full max-w-4xl mx-auto">
-      <div className="overflow-hidden">
+      <p
+        className={`text-2xl md:text-3xl font-black transition duration-300 ${
+          highlight ? "text-yellow-400 drop-shadow-lg" : "text-white"
+        }`}
+      >
+        CERTIFICATES:
+      </p>
+      <div className="overflow-hidden mt-2">
         <div
           className="flex transition-transform duration-500"
           style={{ transform: `translateX(-${currentSlide * 100}%)` }}
