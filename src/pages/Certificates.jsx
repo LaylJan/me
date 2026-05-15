@@ -4,6 +4,7 @@ import i7 from "../assets/certs/I7.jpg";
 import javaFun from "../assets/certs/Java fundumentals.png";
 import next from "../assets/next.svg";
 import responsive from "../assets/certs/Responsive Web.png";
+import C1 from "../assets/certs/EF SET English Certificate C1.png";
 import back from "../assets/back.svg";
 
 const Certificates = ({ highlight }) => {
@@ -28,6 +29,11 @@ const Certificates = ({ highlight }) => {
       image: responsive,
       text: "For successfully completing the Responsive Web Design certification at FreeCodeCamp.",
     },
+    {
+      id: 5,
+      image: C1,
+      text: "Awarded for demonstrating proficiency in English at the C1 level.",
+    }
   ];
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -69,11 +75,13 @@ const Certificates = ({ highlight }) => {
               key={slide.id}
               className="flex flex-col min-w-full items-center justify-center"
             >
-              <img
-                src={slide.image}
-                alt={`Slide ${slide.id}`}
-                className="w-full md:w-4/5"
-              />
+              <div className="w-full md:w-4/5 max-h-[520px] overflow-hidden">
+                <img
+                  src={slide.image}
+                  alt={`Slide ${slide.id}`}
+                  className="w-full h-auto object-contain"
+                />
+              </div>
               <p className="text-center mt-2 text-lg font-semibold">
                 {slide.text}
               </p>
