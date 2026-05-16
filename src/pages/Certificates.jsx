@@ -6,6 +6,7 @@ import next from "../assets/next.svg";
 import responsive from "../assets/certs/Responsive Web.png";
 import C1 from "../assets/certs/EF SET English Certificate C1.png";
 import back from "../assets/back.svg";
+import NC2 from "../assets/certs/NC2.png";
 
 const Certificates = ({ highlight }) => {
   const slides = [
@@ -33,7 +34,13 @@ const Certificates = ({ highlight }) => {
       id: 5,
       image: C1,
       text: "Awarded for demonstrating proficiency in English at the C1 level.",
+    },
+    {
+      id: 6,
+      image: NC2,
+      text: "Awarded for demonstrating proficiency in English at the C2 level.",
     }
+
   ];
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -57,7 +64,7 @@ const Certificates = ({ highlight }) => {
     );
   };
   return (
-    <div className="relative w-full max-w-4xl mx-auto">
+    <div className="font-LS relative w-full max-w-4xl mx-auto">
       <p
         className={`text-2xl md:text-3xl font-black transition duration-300 ${
           highlight ? "text-yellow-400 drop-shadow-lg" : "text-white"
@@ -82,7 +89,7 @@ const Certificates = ({ highlight }) => {
                   className="w-full h-auto object-contain"
                 />
               </div>
-              <p className="text-center mt-2 text-lg font-semibold">
+              <p className="text-center text-white mt-2 text-lg font-semibold">
                 {slide.text}
               </p>
             </div>
@@ -124,6 +131,21 @@ const Certificates = ({ highlight }) => {
             }`}
           ></div>
         ))}
+      </div>
+      {/* Mobile Slide Buttons */}
+      <div className="flex justify-center gap-4 mt-4 md:hidden">
+        <button
+          onClick={prevSlide}
+          className="px-4 py-2 rounded-full bg-white/10 text-white hover:bg-white/20 transition duration-200"
+        >
+          Previous
+        </button>
+        <button
+          onClick={nextSlide}
+          className="px-4 py-2 rounded-full bg-white/10 text-white hover:bg-white/20 transition duration-200"
+        >
+          Next
+        </button>
       </div>
     </div>
   );

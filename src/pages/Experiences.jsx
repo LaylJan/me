@@ -23,7 +23,7 @@ const Experiences = ({ goto, highlight }) => {
           <div className="flex flex-col -space-y-1">
             <p className="font-bold">Britannica United Motors</p>
             <div className="flex flex-col">
-              <p className="">June 2025 – Present</p>
+              <p className="">June 2025 – March 2026</p>
               <p className="">Automotive dealership group</p>
               <p className="">IT Assistant</p>
             </div>
@@ -31,8 +31,10 @@ const Experiences = ({ goto, highlight }) => {
         </div>
         <div className="text-base md:text-xl font-medium mb-5 md:ml-5 items-center md:space-x-5 p-2">
           <p className="">
-            Provide regional on-site and remote IT support for hardware and software issues across Luzon branches,
-            ensuring optimal functionality of all systems and peripherals to maintain uninterrupted operations.
+            Provide regional on-site and remote IT support for hardware and
+            software issues and inventory management across Luzon branches,
+            ensuring optimal functionality of all systems and peripherals to
+            maintain uninterrupted operations.
           </p>
         </div>
       </div>
@@ -57,7 +59,10 @@ const Experiences = ({ goto, highlight }) => {
         </div>
         <div className="text-base md:text-xl font-medium mb-5 md:ml-5 items-center md:space-x-5 p-2">
           <p className="">
-            Resolved hardware and software issues to maintain operational continuity and operated a digital tagging process for efficient supporter benefit distribution.
+            Resolved hardware and software issues and configured Starlink
+            satellite systems to maintain reliable internet connectivity,
+            supporting uninterrupted digital tagging operations and efficient
+            supporter benefit distribution.
           </p>
         </div>
       </div>
@@ -84,8 +89,6 @@ const Experiences = ({ goto, highlight }) => {
           </p>
         </div>
       </div>
-      
-      
     </div>
   );
 };

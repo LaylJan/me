@@ -54,7 +54,7 @@ function App() {
   };
 
   return (
-    <div className="bg-bg w-full min-h-screen">
+    <div className="bg-bg w-full min-h-screen overflow-x-hidden">
       <Router>
         <Routes>
           <Route
@@ -81,27 +81,27 @@ function App() {
                     />
                   </div>
                 </div>
-                <div className="w-full lg:w-3/5 ml-p pr-10">
+                <div className="w-full lg:w-3/5 lg:ml-[40%] pr-2 lg:pr-10">
                   {/* <div ref={educationRef}>
                     <Education
                       goto={goto}
                       highlight={highlightEducation}
                     />
                   </div> */}
-                  <div ref={skillsRef}>
-                    <Skills goto={goto} highlight={highlightSkills} />
-                  </div>
-                  <div ref={projectsRef}>
-                    <Projects goto={goto} highlight={highlightProjects} />
-                  </div>
                   <div ref={experiencesRef}>
                     <Experiences
                       goto={goto}
                       highlight={highlightExperiences}
                     />
                   </div>
+                  <div ref={skillsRef}>
+                    <Skills goto={goto} highlight={highlightSkills} />
+                  </div>
+                  <div ref={projectsRef}>
+                    <Projects goto={goto} highlight={highlightProjects} />
+                  </div>
                   <div ref={certificatesRef}>
-                    <Certificates highlight={highlightCertificates} />
+                    <Certificates />
                   </div>
                   <div ref={contactRef}>
                     <Contact goto={goto} highlight={highlightContact} />

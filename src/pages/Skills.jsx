@@ -18,21 +18,7 @@ const Skills = ({ goto, highlight }) => {
       >
         SKILLS:
       </p>
-      <div className="flex text-base md:text-xl font-medium mt-2 mb-5 md:ml-5 items-center md:space-x-5 p-2">
-        <img src={WD} alt="Webdev" className="w-24 hidden md:block" />
-        <div className="flex flex-col -space-y-1">
-          <div className="flex items-center">
-            <img src={WD} alt="Webdev" className="w-4 mr-1 -mt-1 md:hidden" />
-            <p className="font-bold text-2xl md:text-xl">Web Development</p>
-          </div>
-          <div className="flex flex-col">
-            <p className="">
-              Equipped with knowledge and job experience in frontend tasks using{" "}
-              JavaScript frameworks such as <b>React</b> and <b>Vue</b>.
-            </p>
-          </div>
-        </div>
-      </div>
+      
       <div className="flex text-base md:text-xl font-medium mt-2 mb-5 md:ml-5 items-center md:space-x-5 p-2">
         <img src={CSS} alt="Webdev" className="w-24 hidden md:block" />
         <div className="flex flex-col -space-y-1">
@@ -76,6 +62,22 @@ const Skills = ({ goto, highlight }) => {
             <p className="">
               Advance knowledge on popular programming languages such as{" "}
               <b>Python</b>, <b>Java</b>, and alike.
+            </p>
+          </div>
+        </div>
+        
+      </div>
+      <div className="flex text-base md:text-xl font-medium mt-2 mb-5 md:ml-5 items-center md:space-x-5 p-2">
+        <img src={WD} alt="Webdev" className="w-24 hidden md:block" />
+        <div className="flex flex-col -space-y-1">
+          <div className="flex items-center">
+            <img src={WD} alt="Webdev" className="w-4 mr-1 -mt-1 md:hidden" />
+            <p className="font-bold text-2xl md:text-xl">Web Development</p>
+          </div>
+          <div className="flex flex-col">
+            <p className="">
+              Equipped with knowledge and job experience in frontend tasks <br></br>
+              <div className="mt-1"><b>•REACT •HTML •CSS •JavaScript</b></div>
             </p>
           </div>
         </div>
