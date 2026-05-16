@@ -88,17 +88,18 @@ function App() {
                       highlight={highlightEducation}
                     />
                   </div> */}
-                  <div ref={experiencesRef}>
-                    <Experiences
-                      goto={goto}
-                      highlight={highlightExperiences}
-                    />
-                  </div>
+                  
                   <div ref={skillsRef}>
                     <Skills goto={goto} highlight={highlightSkills} />
                   </div>
                   <div ref={projectsRef}>
                     <Projects goto={goto} highlight={highlightProjects} />
+                  </div>
+                  <div ref={experiencesRef}>
+                    <Experiences
+                      goto={goto}
+                      highlight={highlightExperiences}
+                    />
                   </div>
                   <div ref={certificatesRef}>
                     <Certificates />
