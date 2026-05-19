@@ -30,7 +30,7 @@ const Projects = ({ goto, highlight }) => {
 
           <button
             type="button"
-            onClick={() => goto && goto("#")}
+            onClick={() => goto && goto("")}
             className="ml-auto inline-flex items-center rounded-full border border-white/20 bg-white/10 px-4 py-2 text-white font-semibold transition duration-300 hover:bg-pink-500 hover:border-pink-500"
           >
             <span className="mr-2">View Samples</span>
